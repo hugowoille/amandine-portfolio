@@ -1,0 +1,37 @@
+header {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 60px;
+        background-color: $mauve;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2vw;
+
+        figure {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100px;
+                margin-left: 30px;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 7vw;
+
+            li {
+
+                a {
+                    font-family: $lobster;
+                    font-size: 1.2em;
+                    color: $creme;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+body {
+    background-color: $creme;
+
+    .entete {
+        margin-top: 60px;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        align-items: center;
+        .sc {
+            img {
+                height: 300px;
+                width: 100vw;
+                object-fit: cover;
+                opacity: 0.2;
+                display: block;
+            }
+        }
+
+        .titrelogo {
+            position:absolute;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width:100%;
+            h1 {
+                font-family: $lobster;
+                color: $mauve;
+                font-size: 3rem;
+                text-align: center;
+            }
+            figure{
+                img{
+                    display: block;
+                    height:200px;
+                    width:200px;
+                }
+            }
+        }
+    }
+
+    .pres {
+        display: flex;
+        justify-content: space-around;
+        gap: 5vw;
+
+        .sidebar {
+            width: 100px;
+            height: auto;
+            background-color: $violet;
+        }
+
+        p {
+            font-family: $arapey;
+            color: $violet;
+        }
+    }
+}
