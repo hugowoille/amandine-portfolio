@@ -496,6 +496,30 @@ header nav ul li a {
   color: #fcf8e3;
 }
 
+.title, body .h2s h2 {
+  color: #fcf8e3;
+  background-color: #624b63;
+  font-family: "Lobster Two", cursive;
+  height: 60px;
+  width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 60px;
+  margin-left: 20px;
+  font-size: 2em;
+}
+
+.carre, body .h2s .square {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #624b63;
+  margin-left: 60px;
+}
+
 body {
   background-color: #fcf8e3;
 }
@@ -549,19 +573,27 @@ body .entete .titrelogo figure img {
   width: 200px;
 }
 
+body .h2s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .pres {
+  margin-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 5vw;
-}
-
-body .pres .sidebar {
-  width: 100px;
-  height: auto;
-  background-color: #9f78a0;
+  gap: 4vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .pres p {

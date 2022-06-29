@@ -1,6 +1,33 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+
+//extend :
+
+.title {
+    color: $creme;
+    background-color: $mauve;
+    font-family: $lobster;
+    height: 60px;
+    width: 500px;
+    align-self: center;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 60px;
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+.carre {
+    height: 60px;
+    width: 60px;
+    border: 2px solid $mauve;
+    margin-left: 60px;
+}
+
+
 body {
     background-color: $creme;
 
@@ -11,6 +38,7 @@ body {
         justify-content: space-around;
         height: 300px;
         align-items: center;
+
         .sc {
             img {
                 height: 300px;
@@ -22,41 +50,52 @@ body {
         }
 
         .titrelogo {
-            position:absolute;
-            display:flex;
+            position: absolute;
+            display: flex;
             justify-content: space-around;
             align-items: center;
-            width:100%;
+            width: 100%;
+
             h1 {
                 font-family: $lobster;
                 color: $mauve;
                 font-size: 3rem;
                 text-align: center;
             }
-            figure{
-                img{
+
+            figure {
+                img {
                     display: block;
-                    height:200px;
-                    width:200px;
+                    height: 200px;
+                    width: 200px;
                 }
             }
         }
     }
 
-    .pres {
+    .h2s {
         display: flex;
-        justify-content: space-around;
-        gap: 5vw;
+        align-items: center;
 
-        .sidebar {
-            width: 100px;
-            height: auto;
-            background-color: $violet;
+        .square {
+            @extend .carre;
         }
 
+        h2 {
+            @extend .title;
+        }
+    }
+
+    .pres {
+        margin-left: $marginleft;
+        display: flex;
+        justify-content: space-around;
+        gap: 4vw;
+        flex-direction: column;
         p {
             font-family: $arapey;
             color: $violet;
+            
         }
     }
 }
