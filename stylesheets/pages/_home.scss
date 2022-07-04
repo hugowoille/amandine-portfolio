@@ -13,8 +13,8 @@
     width: 500px;
     align-self: center;
     padding-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     line-height: 60px;
     margin-left: 20px;
     font-size: 2em;
@@ -46,6 +46,7 @@ body {
                 object-fit: cover;
                 opacity: 0.2;
                 display: block;
+                max-width: 100%;
             }
         }
 
@@ -92,10 +93,37 @@ body {
         justify-content: space-around;
         gap: 4vw;
         flex-direction: column;
+        border-left: 2px $mauve solid;
+        padding-left: 50px;
         p {
             font-family: $arapey;
             color: $violet;
-            
+            font-size: 1.5em;
+        }
+        ul{
+            li{
+                color: $violet;
+                font-family: $arapey;
+                font-size: 1.2em;
+                list-style-type:disc;
+                margin-left: 20px;
+            }
+        }
+    }
+    .work{
+        .article_work{
+            justify-content: center;
+            max-width: 100%;
+            display:grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% ;
+            gap:20px;
+            a{
+                img{
+                    max-width: 100%;
+                    object-fit:cover;
+                }
+            }
         }
     }
 }

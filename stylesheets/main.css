@@ -471,6 +471,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   gap: 2vw;
+  z-index: 10;
 }
 
 header nav figure {
@@ -506,8 +507,8 @@ header nav ul li a {
       -ms-grid-row-align: center;
       align-self: center;
   padding-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   line-height: 60px;
   margin-left: 20px;
   font-size: 2em;
@@ -545,6 +546,7 @@ body .entete .sc img {
      object-fit: cover;
   opacity: 0.2;
   display: block;
+  max-width: 100%;
 }
 
 body .entete .titrelogo {
@@ -594,10 +596,41 @@ body .pres {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-left: 2px #624b63 solid;
+  padding-left: 50px;
 }
 
 body .pres p {
   font-family: "Arapey", serif;
   color: #9f78a0;
+  font-size: 1.5em;
+}
+
+body .pres ul li {
+  color: #9f78a0;
+  font-family: "Arapey", serif;
+  font-size: 1.2em;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+body .work .article_work {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -ms-grid-rows: 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75%;
+      grid-template-rows: 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75% 18,75%;
+  gap: 20px;
+}
+
+body .work .article_work a img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
