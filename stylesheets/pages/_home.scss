@@ -331,12 +331,15 @@ body {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin: 0 200px 0 200px;
        column-gap: 50px;
         article{
+
             p{
                 text-align: left;
                 color:$mauve;
+                padding:0 10% 0 10%;
             }
             
             img{

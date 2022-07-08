@@ -937,6 +937,9 @@ body .apropos {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 200px 0 200px;
   -webkit-column-gap: 50px;
           column-gap: 50px;
@@ -945,6 +948,7 @@ body .apropos {
 body .apropos article p {
   text-align: left;
   color: #624b63;
+  padding: 0 10% 0 10%;
 }
 
 body .apropos article img {
