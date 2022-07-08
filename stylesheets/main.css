@@ -522,13 +522,83 @@ header nav ul li a {
   margin-left: 60px;
 }
 
+.hover_article:hover img, body .work .article_work .savon:hover img, body .work .article_work .troubleu:hover img, body .work .article_work .tft:hover img, body .work .article_work .rayon:hover img, body .work .article_work .cosme2:hover img, body .work .article_work .svgjinn:hover img, body .work .article_work .souris:hover img, body .work .article_work .cosme1:hover img {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hover_article:hover h3, body .work .article_work .savon:hover h3, body .work .article_work .troubleu:hover h3, body .work .article_work .tft:hover h3, body .work .article_work .rayon:hover h3, body .work .article_work .cosme2:hover h3, body .work .article_work .svgjinn:hover h3, body .work .article_work .souris:hover h3, body .work .article_work .cosme1:hover h3 {
+  top: 20px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  text-decoration: overline;
+}
+
+.hover_article:hover p, body .work .article_work .savon:hover p, body .work .article_work .troubleu:hover p, body .work .article_work .tft:hover p, body .work .article_work .rayon:hover p, body .work .article_work .cosme2:hover p, body .work .article_work .svgjinn:hover p, body .work .article_work .souris:hover p, body .work .article_work .cosme1:hover p {
+  top: 90px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.hover_article:not(:hover) h3, body .work .article_work .savon:not(:hover) h3, body .work .article_work .troubleu:not(:hover) h3, body .work .article_work .tft:not(:hover) h3, body .work .article_work .rayon:not(:hover) h3, body .work .article_work .cosme2:not(:hover) h3, body .work .article_work .svgjinn:not(:hover) h3, body .work .article_work .souris:not(:hover) h3, body .work .article_work .cosme1:not(:hover) h3, .hover_article:not(:hover) p, body .work .article_work .savon:not(:hover) p, body .work .article_work .troubleu:not(:hover) p, body .work .article_work .tft:not(:hover) p, body .work .article_work .rayon:not(:hover) p, body .work .article_work .cosme2:not(:hover) p, body .work .article_work .svgjinn:not(:hover) p, body .work .article_work .souris:not(:hover) p, body .work .article_work .cosme1:not(:hover) p {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.hover_article:not(:hover) img, body .work .article_work .savon:not(:hover) img, body .work .article_work .troubleu:not(:hover) img, body .work .article_work .tft:not(:hover) img, body .work .article_work .rayon:not(:hover) img, body .work .article_work .cosme2:not(:hover) img, body .work .article_work .svgjinn:not(:hover) img, body .work .article_work .souris:not(:hover) img, body .work .article_work .cosme1:not(:hover) img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hover_article .shadow_work, body .work .article_work .savon .shadow_work, body .work .article_work .troubleu .shadow_work, body .work .article_work .tft .shadow_work, body .work .article_work .rayon .shadow_work, body .work .article_work .cosme2 .shadow_work, body .work .article_work .svgjinn .shadow_work, body .work .article_work .souris .shadow_work, body .work .article_work .cosme1 .shadow_work {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0;
+  z-index: 9;
+}
+
+.hover_article .shadow_work:hover, body .work .article_work .savon .shadow_work:hover, body .work .article_work .troubleu .shadow_work:hover, body .work .article_work .tft .shadow_work:hover, body .work .article_work .rayon .shadow_work:hover, body .work .article_work .cosme2 .shadow_work:hover, body .work .article_work .svgjinn .shadow_work:hover, body .work .article_work .souris .shadow_work:hover, body .work .article_work .cosme1 .shadow_work:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.hover_article .shadow_work:not(:hover), body .work .article_work .savon .shadow_work:not(:hover), body .work .article_work .troubleu .shadow_work:not(:hover), body .work .article_work .tft .shadow_work:not(:hover), body .work .article_work .rayon .shadow_work:not(:hover), body .work .article_work .cosme2 .shadow_work:not(:hover), body .work .article_work .svgjinn .shadow_work:not(:hover), body .work .article_work .souris .shadow_work:not(:hover), body .work .article_work .cosme1 .shadow_work:not(:hover) {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.hover_article h3, body .work .article_work .savon h3, body .work .article_work .troubleu h3, body .work .article_work .tft h3, body .work .article_work .rayon h3, body .work .article_work .cosme2 h3, body .work .article_work .svgjinn h3, body .work .article_work .souris h3, body .work .article_work .cosme1 h3, .hover_article p, body .work .article_work .savon p, body .work .article_work .troubleu p, body .work .article_work .tft p, body .work .article_work .rayon p, body .work .article_work .cosme2 p, body .work .article_work .svgjinn p, body .work .article_work .souris p, body .work .article_work .cosme1 p {
+  position: absolute;
+  z-index: 9;
+  color: white;
+}
+
+.hover_article h3, body .work .article_work .savon h3, body .work .article_work .troubleu h3, body .work .article_work .tft h3, body .work .article_work .rayon h3, body .work .article_work .cosme2 h3, body .work .article_work .svgjinn h3, body .work .article_work .souris h3, body .work .article_work .cosme1 h3 {
+  top: -50px;
+  left: 20px;
+  font-size: 2em;
+}
+
+.hover_article p, body .work .article_work .savon p, body .work .article_work .troubleu p, body .work .article_work .tft p, body .work .article_work .rayon p, body .work .article_work .cosme2 p, body .work .article_work .svgjinn p, body .work .article_work .souris p, body .work .article_work .cosme1 p {
+  top: -90px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: left;
+}
+
 body {
   background-color: #fcf8e3;
 }
 
 body .entete {
   margin-top: 60px;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,10 +692,10 @@ body .work .article_work {
   max-width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 30% 30%;
-      grid-template-columns: 30% 30% 30%;
-  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10%;
   -webkit-column-gap: 20px;
           column-gap: 20px;
   row-gap: 20px;
@@ -637,7 +707,6 @@ body .work .article_work a img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px solid #624b63;
 }
 
 body .work .article_work a h3 {
@@ -675,6 +744,8 @@ body .work .article_work .savon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
 body .work .article_work .troubleu {
@@ -698,58 +769,6 @@ body .work .article_work .troubleu {
   overflow: hidden;
 }
 
-body .work .article_work .troubleu:hover img {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-body .work .article_work .troubleu:hover h3 {
-  top: 20px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-body .work .article_work .troubleu:hover p {
-  top: 90px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-body .work .article_work .troubleu:not(:hover) h3, body .work .article_work .troubleu:not(:hover) p {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-body .work .article_work .troubleu:not(:hover) img {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-body .work .article_work .troubleu h3, body .work .article_work .troubleu p {
-  position: absolute;
-  z-index: 10;
-  color: white;
-}
-
-body .work .article_work .troubleu h3 {
-  top: -50px;
-  left: 20px;
-  font-size: 2em;
-}
-
-body .work .article_work .troubleu p {
-  top: -90px;
-  left: 20px;
-  margin: 0;
-  padding: 0;
-  display: block;
-  text-align: left;
-}
-
 body .work .article_work .tft {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -767,6 +786,8 @@ body .work .article_work .tft {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
 body .work .article_work .rayon {
@@ -786,6 +807,29 @@ body .work .article_work .rayon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+body .work .article_work .contact_work {
+  border: none;
+  border-radius: 20px;
+  background-color: #624b63;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .work .article_work .contact_work h3, body .work .article_work .contact_work p {
+  color: white;
 }
 
 body .work .article_work .cosme2 {
@@ -805,6 +849,8 @@ body .work .article_work .cosme2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
 body .work .article_work .svgjinn {
@@ -824,6 +870,8 @@ body .work .article_work .svgjinn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
 body .work .article_work .svgjinn img {
@@ -848,6 +896,8 @@ body .work .article_work .souris {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
 body .work .article_work .souris img {
@@ -872,5 +922,33 @@ body .work .article_work .cosme1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+body .apropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 200px 0 200px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+body .apropos article p {
+  text-align: left;
+  color: #624b63;
+}
+
+body .apropos article img {
+  display: block;
+  border: 1px solid #624b63;
 }
 /*# sourceMappingURL=main.css.map */
