@@ -5,13 +5,44 @@ footer{
     position:fixed;
     bottom:0;
     z-index: -10;
-    height:200px;
+    height:500px;
     width:100%;
     background-color: $mauve;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2{
-        font-size: 3em;
+    .footer_contain{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height:600px;
+        align-items: center;
+        flex-basis: 0;
+        font-family: $montserrat;
+        .logocreme{
+            width:250px;
+        }
+        .menu, .contact{
+            h3{
+                color:#342a35;
+                margin-bottom: 50px;
+            }
+            a{
+                color: $creme;
+            }
+        }
+        .iconsclick{
+            color:$creme;
+            text-align: center;
+            img, p{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .copy{
+        position: absolute;
+        color:$creme;
+        font-family: $montserrat;
+        bottom: 5px;
+        width:100%;
+        text-align: center;
+        font-size: 0.8em;
     }
 }
