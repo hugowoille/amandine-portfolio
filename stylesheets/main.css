@@ -457,6 +457,28 @@ body {
   width: 1px;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: -10;
+  height: 200px;
+  width: 100%;
+  background-color: #624b63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h2 {
+  font-size: 3em;
+}
+
 header nav {
   position: fixed;
   top: 0;
@@ -496,6 +518,12 @@ header nav ul li a {
   font-family: "Lobster Two", cursive;
   font-size: 1.2em;
   color: #fcf8e3;
+}
+
+.bg {
+  background-color: #fcf8e3;
+  position: relative;
+  margin-bottom: 200px;
 }
 
 .title, body .h2s h2 {
@@ -618,10 +646,6 @@ body .work .article_work .cosme1 p {
   padding: 0;
   display: block;
   text-align: left;
-}
-
-body {
-  background-color: #fcf8e3;
 }
 
 body .entete {

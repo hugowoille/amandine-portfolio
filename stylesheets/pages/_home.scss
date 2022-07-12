@@ -4,7 +4,11 @@
 
 
 //extend :
-
+.bg{
+    background-color: $creme;
+    position: relative;
+    margin-bottom: 200px;
+}
 .title {
     color: $creme;
     background-color: $mauve;
@@ -102,9 +106,7 @@
     }
 }
 
-
 body {
-    background-color: $creme;
 
     .entete {
         margin-top: 60px;
@@ -369,25 +371,28 @@ body {
     }
 
     .polyv {
-        margin:100px 0 100px 0;
+        margin: 100px 0 100px 0;
         .pictos {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             flex-basis: 0;
-            gap:50px;
+            gap: 50px;
+            
             figure {
                 img {
                     width: 200px;
                     height: 200px;
-                    display:block;
+                    display: block;
                 }
             }
-            h4{
+
+            h4 {
                 text-align: center;
-                color:$mauve;
+                color: $mauve;
                 font-family: $montserrat;
             }
         }
     }
+
 }

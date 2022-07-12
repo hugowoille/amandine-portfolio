@@ -1,3 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer{
+    position:fixed;
+    bottom:0;
+    z-index: -10;
+    height:200px;
+    width:100%;
+    background-color: $mauve;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 3em;
+    }
+}
