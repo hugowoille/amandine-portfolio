@@ -10,6 +10,7 @@ header {
         align-items: center;
         gap: 2vw;
         z-index: 10;
+
         figure {
             height: 100%;
 
@@ -24,12 +25,26 @@ header {
             display: flex;
             gap: 7vw;
 
+            :hover {
+                text-decoration: none;
+                color: $creme;
+            }
+
             li {
+                position: relative;
 
                 a {
                     font-family: $lobster;
                     font-size: 1.2em;
                     color: $creme;
+                    background: linear-gradient(to top, $creme 0%, $creme 7%, transparent 10.01%) no-repeat top / 0 100%;
+                    transition: background-size .5s;
+                    padding:0 15px 5px 15px;
+                    display: block;
+                    &:hover {
+                        background-size: 100% 100%;
+                    }
+
                 }
             }
         }

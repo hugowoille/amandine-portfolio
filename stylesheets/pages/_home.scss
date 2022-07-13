@@ -3,15 +3,14 @@
 // -----------------------------------------------------------------------------
 
 
-//extend :
-
+   ////////////////  EXTEND  ////////////// :
 
 .title {
     color: $creme;
     background-color: $mauve;
     font-family: $lobster;
     height: 60px;
-    width: 500px;
+    width: 1000px;
     align-self: center;
     padding-left: 20px;
     margin-top: 80px;
@@ -113,9 +112,12 @@ html {
             margin-bottom: 400px;
         }
 
+        ////////////////  ENTETE  ////////////// :
+
         .entete {
             margin-top: 60px;
-
+            width:100vw;
+            max-width: 100%;
             display: flex;
             justify-content: space-around;
             height: 300px;
@@ -126,7 +128,7 @@ html {
                     height: 300px;
                     width: 100vw;
                     object-fit: cover;
-                    opacity: 0.2;
+                    opacity: 0.4;
                     display: block;
                     max-width: 100%;
                 }
@@ -156,6 +158,8 @@ html {
             }
         }
 
+        ////////////////  SERVICES PROPOSES ////////////// :
+
         .h2s {
             display: flex;
             align-items: center;
@@ -180,13 +184,13 @@ html {
 
             p {
                 font-family: $arapey;
-                color: $violet;
+                color: $mauve;
                 font-size: 1.5em;
             }
 
             ul {
                 li {
-                    color: $violet;
+                    color: $mauve;
                     font-family: $arapey;
                     font-size: 1.2em;
                     list-style-type: disc;
@@ -194,6 +198,8 @@ html {
                 }
             }
         }
+
+        ////////////////  TRAVAUX  ////////////// :
 
         .work {
             .article_work {
@@ -205,7 +211,7 @@ html {
                 column-gap: 20px;
                 row-gap: 20px;
 
-                a {
+                a, article {
 
                     img {
                         display: block;
@@ -352,20 +358,24 @@ html {
             }
         }
 
+        ////////////////  A PROPOS  ////////////// :
+
         .apropos {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            margin: 0 200px 0 200px;
-            column-gap: 50px;
+            margin-left: 60px;
+            
 
             article {
 
                 p {
                     text-align: left;
                     color: $mauve;
-                    padding: 0 10% 0 10%;
+                    padding: 0 5% 0 5%;
+                    font-family: $montserrat;
+                    font-size: 0.8em;;
                 }
 
                 img {
@@ -374,6 +384,8 @@ html {
                 }
             }
         }
+
+        ////////////////  PICTOS  ////////////// :
 
         .polyv {
             margin: 100px 0 100px 0;

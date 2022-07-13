@@ -498,6 +498,10 @@ footer .footer_contain .menu a, footer .footer_contain .contact a {
   color: #fcf8e3;
 }
 
+footer .footer_contain .menu li, footer .footer_contain .contact li {
+  color: #fcf8e3;
+}
+
 footer .footer_contain .iconsclick {
   color: #fcf8e3;
   text-align: center;
@@ -552,10 +556,29 @@ header nav ul {
   gap: 7vw;
 }
 
+header nav ul :hover {
+  text-decoration: none;
+  color: #fcf8e3;
+}
+
+header nav ul li {
+  position: relative;
+}
+
 header nav ul li a {
   font-family: "Lobster Two", cursive;
   font-size: 1.2em;
   color: #fcf8e3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcf8e3), color-stop(7%, #fcf8e3), color-stop(10.01%, transparent)) no-repeat top/0 100%;
+  background: linear-gradient(to top, #fcf8e3 0%, #fcf8e3 7%, transparent 10.01%) no-repeat top/0 100%;
+  -webkit-transition: background-size .5s;
+  transition: background-size .5s;
+  padding: 0 15px 5px 15px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background-size: 100% 100%;
 }
 
 .title, html body .h2s h2 {
@@ -563,7 +586,7 @@ header nav ul li a {
   background-color: #624b63;
   font-family: "Lobster Two", cursive;
   height: 60px;
-  width: 500px;
+  width: 1000px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -692,6 +715,8 @@ html body .bg {
 
 html body .entete {
   margin-top: 60px;
+  width: 100vw;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -708,7 +733,7 @@ html body .entete .sc img {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.4;
   display: block;
   max-width: 100%;
 }
@@ -766,12 +791,12 @@ html body .pres {
 
 html body .pres p {
   font-family: "Arapey", serif;
-  color: #9f78a0;
+  color: #624b63;
   font-size: 1.5em;
 }
 
 html body .pres ul li {
-  color: #9f78a0;
+  color: #624b63;
   font-family: "Arapey", serif;
   font-size: 1.2em;
   list-style-type: disc;
@@ -794,7 +819,7 @@ html body .work .article_work {
   row-gap: 20px;
 }
 
-html body .work .article_work a img {
+html body .work .article_work a img, html body .work .article_work article img {
   display: block;
   width: 100%;
   height: 100%;
@@ -802,7 +827,7 @@ html body .work .article_work a img {
      object-fit: cover;
 }
 
-html body .work .article_work a h3 {
+html body .work .article_work a h3, html body .work .article_work article h3 {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -811,7 +836,7 @@ html body .work .article_work a h3 {
   color: #624b63;
 }
 
-html body .work .article_work a p {
+html body .work .article_work a p, html body .work .article_work article p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
@@ -1028,21 +1053,20 @@ html body .apropos {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 200px 0 200px;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  margin-left: 60px;
 }
 
 html body .apropos article p {
   text-align: left;
   color: #624b63;
-  padding: 0 10% 0 10%;
+  padding: 0 5% 0 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
 }
 
 html body .apropos article img {
