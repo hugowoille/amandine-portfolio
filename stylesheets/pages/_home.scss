@@ -42,7 +42,7 @@
         }
 
         p {
-            top: 90px;
+            top: 70px;
             transition: 0.6s;
         }
 
@@ -89,7 +89,7 @@
     h3 {
         top: -50px;
         left: 20px;
-        font-size: 2em;
+        font-size: 1.2em;
     }
 
     p {
@@ -381,6 +381,7 @@ html {
                 img {
                     display: block;
                     border: 1px solid $mauve;
+                    width:100%;
                 }
             }
         }

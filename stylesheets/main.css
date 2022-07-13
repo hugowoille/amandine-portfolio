@@ -620,7 +620,7 @@ header nav ul li a:hover {
 }
 
 .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .cosme2:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
-  top: 90px;
+  top: 70px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -682,7 +682,7 @@ html body .work .article_work .cosme1 p {
 .hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .cosme2 h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
   top: -50px;
   left: 20px;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 
@@ -1072,6 +1072,7 @@ html body .apropos article p {
 html body .apropos article img {
   display: block;
   border: 1px solid #624b63;
+  width: 100%;
 }
 
 html body .polyv {
