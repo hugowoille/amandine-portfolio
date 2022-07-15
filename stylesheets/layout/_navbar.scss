@@ -1,52 +1,126 @@
-header {
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 60px;
-        background-color: $mauve;
-        display: flex;
-        justify-content: space-around;
+  /*header {
+      .navbar {
+          position: fixed;
+          top: 0;
+          width: 100vw;
+          height: 60px;
+          background-color: $mauve;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 2vw;
+          z-index: 10;
+          outline: solid;
+
+
+      }
+
+      figure {
+          height: 100%;
+
+          img {
+              height: 100%;
+              width: 100px;
+              margin-left: 30px;
+          }
+      }
+
+      ul {
+          display: flex;
+          gap: 7vw;
+
+          :hover {
+              text-decoration: none;
+              color: $creme;
+          }
+
+          li {
+              position: relative;
+
+              a {
+                  font-family: $lobster;
+                  font-size: 1.2em;
+                  color: $creme;
+                  background: linear-gradient(to top, $creme 0%, $creme 7%, transparent 10.01%) no-repeat top / 0 100%;
+                  transition: background-size .5s;
+                  padding: 0 15px 5px 15px;
+                  display: block;
+
+                  &:hover {
+                      background-size: 100% 100%;
+                  }
+
+              }
+          }
+      }
+  }
+  */
+  *,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    display:flex;
+    align-items: center;
+    top:0;
+    background: $mauve;
+    height:60px;
+    justify-content: space-around;
+    z-index: 20;
+    .nav-icon{
+        display:flex;
         align-items: center;
-        gap: 2vw;
-        z-index: 10;
-
-        figure {
-            height: 100%;
-
-            img {
-                height: 100%;
-                width: 100px;
-                margin-left: 30px;
-            }
+        text-decoration: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        img{
+            width:100px;
         }
-
-        ul {
-            display: flex;
-            gap: 7vw;
-
-            :hover {
+    }
+    .main-navlinks{
+        .hamburger{
+            display:none
+        }
+        .navlinks-container{
+            display:flex;
+            column-gap: 5vw;
+            a{
+                font-family: $lobster;
                 text-decoration: none;
-                color: $creme;
-            }
-
-            li {
+                color:$creme;
+                font-size: 1.3em;
+                display:inline-block;
                 position: relative;
-
-                a {
-                    font-family: $lobster;
-                    font-size: 1.2em;
-                    color: $creme;
-                    background: linear-gradient(to top, $creme 0%, $creme 7%, transparent 10.01%) no-repeat top / 0 100%;
-                    transition: background-size .5s;
-                    padding:0 15px 5px 15px;
+                &:after{
+                    content:"";
                     display: block;
-                    &:hover {
-                        background-size: 100% 100%;
-                    }
-
+                    position: absolute;
+                    bottom: -3px;
+                    width:100%;
+                    height:1px;
+                    transform: scale(0);
+                    transform-origin: left;
+                    background: $creme;
+                    transition: transform 0.3s ease-out;
+                }
+                &:hover:after{
+                    transform: scaleX(1);
                 }
             }
+        }
+    }
+}
+@media (max-width: 900px){
+    .navbar{
+        position:relative;
+        .nav-icon{
+            order:2;
+            margin:0 auto;
         }
     }
 }

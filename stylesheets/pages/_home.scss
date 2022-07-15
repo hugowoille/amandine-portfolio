@@ -84,6 +84,7 @@
         position: absolute;
         z-index: 9;
         color: white;
+        
     }
 
     h3 {
@@ -212,7 +213,8 @@ html {
                 row-gap: 20px;
 
                 a, article {
-
+                    position:relative;
+                    z-index: 1;
                     img {
                         display: block;
                         width: 100%;
