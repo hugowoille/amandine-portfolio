@@ -592,7 +592,7 @@ footer .copy {
   padding: 0;
 }
 
-.navbar {
+nav {
   position: fixed;
   width: 100%;
   display: -webkit-box;
@@ -609,7 +609,7 @@ footer .copy {
   z-index: 20;
 }
 
-.navbar .nav-icon {
+nav .nav-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,15 +621,15 @@ footer .copy {
   margin-left: 20px;
 }
 
-.navbar .nav-icon img {
+nav .nav-icon img {
   width: 100px;
 }
 
-.navbar .main-navlinks .hamburger {
+nav .main-navlinks .hamburger {
   display: none;
 }
 
-.navbar .main-navlinks .navlinks-container {
+nav .main-navlinks .navlinks-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,7 +637,7 @@ footer .copy {
           column-gap: 5vw;
 }
 
-.navbar .main-navlinks .navlinks-container a {
+nav .main-navlinks .navlinks-container a {
   font-family: "Lobster Two", cursive;
   text-decoration: none;
   color: #fcf8e3;
@@ -646,7 +646,7 @@ footer .copy {
   position: relative;
 }
 
-.navbar .main-navlinks .navlinks-container a:after {
+nav .main-navlinks .navlinks-container a:after {
   content: "";
   display: block;
   position: absolute;
@@ -664,20 +664,114 @@ footer .copy {
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-.navbar .main-navlinks .navlinks-container a:hover:after {
+nav .main-navlinks .navlinks-container a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
 @media (max-width: 900px) {
-  .navbar {
-    position: relative;
+  nav {
+    position: fixed;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .navbar .nav-icon {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin: 0 auto;
+  nav .nav-icon {
+    width: 90px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  nav .nav-icon span {
+    font-size: 22px;
+  }
+  nav .main-navlinks .navlinks-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    background-color: #624b63;
+    left: 0;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    padding: 10px 50px 15px 20px;
+  }
+  nav .main-navlinks .navlinks-container a {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0;
+  }
+  nav .main-navlinks .hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-left: 25px;
+  }
+  nav .main-navlinks .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fcf8e3;
+    position: absolute;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s 0.15s ease-out;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+  nav .main-navlinks .hamburger span:nth-child(1), nav .main-navlinks .hamburger span:nth-child(3) {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  nav .main-navlinks .hamburger span:nth-child(1) {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+  }
+  nav .main-navlinks .hamburger span:nth-child(3) {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  nav .main-navlinks .open {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  nav .main-navlinks .hamburger.open span:nth-child(1) {
+    -webkit-transform: translate(0) rotate(135deg);
+            transform: translate(0) rotate(135deg);
+  }
+  nav .main-navlinks .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.15s ease-out;
+    transition: opacity 0.3s 0.15s ease-out;
+  }
+  nav .main-navlinks .hamburger.open span:nth-child(3) {
+    -webkit-transform: translate(0) rotate(-135deg);
+            transform: translate(0) rotate(-135deg);
+  }
+}
+
+@media (max-width: 500px) {
+  nav .nav-icon {
+    width: 80px;
   }
 }
 
