@@ -526,63 +526,6 @@ footer .copy {
   font-size: 0.8em;
 }
 
-/*header {
-      .navbar {
-          position: fixed;
-          top: 0;
-          width: 100vw;
-          height: 60px;
-          background-color: $mauve;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          gap: 2vw;
-          z-index: 10;
-          outline: solid;
-
-
-      }
-
-      figure {
-          height: 100%;
-
-          img {
-              height: 100%;
-              width: 100px;
-              margin-left: 30px;
-          }
-      }
-
-      ul {
-          display: flex;
-          gap: 7vw;
-
-          :hover {
-              text-decoration: none;
-              color: $creme;
-          }
-
-          li {
-              position: relative;
-
-              a {
-                  font-family: $lobster;
-                  font-size: 1.2em;
-                  color: $creme;
-                  background: linear-gradient(to top, $creme 0%, $creme 7%, transparent 10.01%) no-repeat top / 0 100%;
-                  transition: background-size .5s;
-                  padding: 0 15px 5px 15px;
-                  display: block;
-
-                  &:hover {
-                      background-size: 100% 100%;
-                  }
-
-              }
-          }
-      }
-  }
-  */
 *,
 ::before,
 ::after {
@@ -1013,12 +956,14 @@ html body .work .article_work {
   row-gap: 20px;
 }
 
-html body .work .article_work a, html body .work .article_work article {
+html body .work .article_work a,
+html body .work .article_work article {
   position: relative;
   z-index: 1;
 }
 
-html body .work .article_work a img, html body .work .article_work article img {
+html body .work .article_work a img,
+html body .work .article_work article img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1026,7 +971,8 @@ html body .work .article_work a img, html body .work .article_work article img {
      object-fit: cover;
 }
 
-html body .work .article_work a h3, html body .work .article_work article h3 {
+html body .work .article_work a h3,
+html body .work .article_work article h3 {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -1035,7 +981,8 @@ html body .work .article_work a h3, html body .work .article_work article h3 {
   color: #624b63;
 }
 
-html body .work .article_work a p, html body .work .article_work article p {
+html body .work .article_work a p,
+html body .work .article_work article p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
@@ -1303,5 +1250,66 @@ html body .polyv .pictos h4 {
   text-align: center;
   color: #624b63;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  html body .entete {
+    height: calc(100vh - 60px);
+  }
+  html body .entete .sc img {
+    height: calc(100vh - 60px);
+    opacity: 0.2;
+  }
+  html body .entete .titrelogo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    height: calc(100vh - 60px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 150px;
+  }
+  html body .entete .titrelogo h1 {
+    font-size: 1.5em;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 50px;
+  }
+  html body .entete .titrelogo figure img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  html body .h2s {
+    margin: 0;
+  }
+  html body .h2s .square {
+    display: none;
+  }
+  html body .h2s h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 35px 0;
+  }
+  html body .pres {
+    height: 50vh;
+    margin-left: 0;
+    padding: 0 20px;
+    row-gap: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  html body .pres p {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  html body .pres li {
+    font-size: 1em !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 
-   ////////////////  EXTEND  ////////////// :
+////////////////  EXTEND  ////////////// :
 
 .title {
     color: $creme;
@@ -84,7 +84,7 @@
         position: absolute;
         z-index: 9;
         color: white;
-        
+
     }
 
     h3 {
@@ -117,7 +117,7 @@ html {
 
         .entete {
             margin-top: 60px;
-            width:100vw;
+            width: 100vw;
             max-width: 100%;
             display: flex;
             justify-content: space-around;
@@ -212,9 +212,11 @@ html {
                 column-gap: 20px;
                 row-gap: 20px;
 
-                a, article {
-                    position:relative;
+                a,
+                article {
+                    position: relative;
                     z-index: 1;
+
                     img {
                         display: block;
                         width: 100%;
@@ -368,7 +370,7 @@ html {
             justify-content: space-around;
             align-items: center;
             margin-left: 60px;
-            
+
 
             article {
 
@@ -377,13 +379,14 @@ html {
                     color: $mauve;
                     padding: 0 5% 0 5%;
                     font-family: $montserrat;
-                    font-size: 0.8em;;
+                    font-size: 0.8em;
+                    ;
                 }
 
                 img {
                     display: block;
                     border: 1px solid $mauve;
-                    width:100%;
+                    width: 100%;
                 }
             }
         }
@@ -393,13 +396,14 @@ html {
         .polyv {
             margin: 100px 0 100px 0;
             padding-bottom: 100px;
+
             .pictos {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 flex-basis: 0;
                 gap: 50px;
-                
+
                 figure {
                     img {
                         width: 200px;
@@ -412,6 +416,71 @@ html {
                     text-align: center;
                     color: $mauve;
                     font-family: $montserrat;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        body {
+            .entete {
+                height:calc(100vh - 60px);
+                
+                .sc{
+                    
+                    img{
+                        height:calc(100vh - 60px);
+                        opacity:0.2;
+                        
+                    }
+                }
+                .titrelogo {
+                    flex-direction: column;
+                    margin:0 auto;
+                    height:calc(100vh - 60px);
+                    justify-content: center;
+                    padding-bottom: 150px;
+                    h1 {
+                        font-size: 1.5em;
+                        order:1;
+                        margin-top:50px;
+                        
+                    }
+                    figure{
+                        img{
+                            order:2;
+                           
+                        }
+                    }
+                }
+            }
+            .h2s{
+                margin:0;
+                .square{
+                    display:none;
+                }
+                h2{
+                    margin-left: 0;
+                    text-align: center;
+                    font-size: 1.5em;
+                    margin:35px 0;
+                }
+            }
+            
+            .pres{
+                height:50vh;
+                margin-left: 0;
+                padding: 0 20px;
+               row-gap: 30px;
+                justify-content: space-around;
+                p{
+                    font-size: 1.2em;
+                    font-weight: 500;
+                }
+                li{
+                    font-size: 1em!important;
                 }
             }
         }
