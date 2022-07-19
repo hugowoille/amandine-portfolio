@@ -464,6 +464,7 @@ footer {
   height: 500px;
   width: 100%;
   background-color: #624b63;
+  max-width: 100%;
 }
 
 footer .footer_contain {
@@ -483,6 +484,7 @@ footer .footer_contain {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   font-family: "Montserrat", sans-serif;
+  max-width: 100%;
 }
 
 footer .footer_contain .logocreme {
@@ -831,6 +833,7 @@ html body .work .article_work .cosme1:not(:hover) p {
   position: absolute;
   opacity: 0;
   z-index: 9;
+  max-width: 100%;
 }
 
 .hover_article .shadow_work:hover, html body .work .article_work .savon .shadow_work:hover, html body .work .article_work .troubleu .shadow_work:hover, html body .work .article_work .tft .shadow_work:hover, html body .work .article_work .rayon .shadow_work:hover, html body .work .article_work .farmitoo .shadow_work:hover, html body .work .article_work .svgjinn .shadow_work:hover, html body .work .article_work .souris .shadow_work:hover, html body .work .article_work .cosme1 .shadow_work:hover {
@@ -850,8 +853,10 @@ html {
 
 html body .bg {
   background-color: #fcf8e3;
+  width: 100vw;
   position: relative;
   margin-bottom: 400px;
+  max-width: 100%;
 }
 
 html body .entete {
@@ -1327,12 +1332,12 @@ html body .polyv .pictos h4 {
     font-size: 1.3em;
   }
   html body .work .article_work .hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
-    top: 20%;
+    top: 2vw;
     font-size: 2em;
     text-align: left;
   }
   html body .work .article_work .hover_article p, html body .work .article_work .savon p, html body .work .article_work .troubleu p, html body .work .article_work .tft p, html body .work .article_work .rayon p, html body .work .article_work .farmitoo p, html body .work .article_work .svgjinn p, html body .work .article_work .souris p, html body .work .article_work .cosme1 p {
-    top: 50%;
+    top: 7vw;
     font-size: 1.5em;
   }
   html body .work .article_work .hover_article img, html body .work .article_work .savon img, html body .work .article_work .troubleu img, html body .work .article_work .tft img, html body .work .article_work .rayon img, html body .work .article_work .farmitoo img, html body .work .article_work .svgjinn img, html body .work .article_work .souris img, html body .work .article_work .cosme1 img {
@@ -1365,7 +1370,7 @@ html body .polyv .pictos h4 {
     transition: unset;
   }
   html body .work .article_work .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
-    top: 50%;
+    top: 7vw;
   }
   
   html body .work .article_work .hover_article:hover h3,
@@ -1377,7 +1382,7 @@ html body .polyv .pictos h4 {
   html body .work .article_work .svgjinn:hover h3,
   html body .work .article_work .souris:hover h3,
   html body .work .article_work .cosme1:hover h3 {
-    top: 20%;
+    top: 2vw;
     text-decoration: none;
   }
   html body .work .article_work .hover_article:not(:hover) p, html body .work .article_work .savon:not(:hover) p, html body .work .article_work .troubleu:not(:hover) p, html body .work .article_work .tft:not(:hover) p, html body .work .article_work .rayon:not(:hover) p, html body .work .article_work .farmitoo:not(:hover) p, html body .work .article_work .svgjinn:not(:hover) p, html body .work .article_work .souris:not(:hover) p, html body .work .article_work .cosme1:not(:hover) p,
@@ -1489,6 +1494,9 @@ html body .polyv .pictos h4 {
 }
 
 @media (max-width: 650px) {
+  html body .work {
+    max-width: 98.55%;
+  }
   html body .work .article_work {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1498,10 +1506,10 @@ html body .polyv .pictos h4 {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     gap: 1.5vw;
-    margin-bottom: 15vw;
+    margin-bottom: 35vw;
   }
   html body .work .article_work .savon {
     -ms-grid-column: 1;
@@ -1511,6 +1519,10 @@ html body .polyv .pictos h4 {
     -ms-grid-row-span: 3;
     grid-row: 1 / 4;
   }
+  html body .work .article_work .savon h3,
+  html body .work .article_work .savon p {
+    font-size: 2.5em;
+  }
   html body .work .article_work .troubleu {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
@@ -1518,6 +1530,10 @@ html body .polyv .pictos h4 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     grid-row: 1 / 4;
+  }
+  html body .work .article_work .troubleu h3,
+  html body .work .article_work .troubleu p {
+    font-size: 2.5em;
   }
   html body .work .article_work .tft {
     -ms-grid-column: 1;
@@ -1527,6 +1543,10 @@ html body .polyv .pictos h4 {
     -ms-grid-row-span: 3;
     grid-row: 4 / 7;
   }
+  html body .work .article_work .tft h3,
+  html body .work .article_work .tft p {
+    font-size: 2.5em;
+  }
   html body .work .article_work .rayon {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
@@ -1534,6 +1554,10 @@ html body .polyv .pictos h4 {
     -ms-grid-row: 4;
     -ms-grid-row-span: 3;
     grid-row: 4 / 7;
+  }
+  html body .work .article_work .rayon h3,
+  html body .work .article_work .rayon p {
+    font-size: 2.5em;
   }
   html body .work .article_work .farmitoo {
     -ms-grid-column: 1;
@@ -1543,6 +1567,10 @@ html body .polyv .pictos h4 {
     -ms-grid-row-span: 3;
     grid-row: 7 / 10;
   }
+  html body .work .article_work .farmitoo h3,
+  html body .work .article_work .farmitoo p {
+    font-size: 2.5em;
+  }
   html body .work .article_work .souris {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
@@ -1551,13 +1579,24 @@ html body .polyv .pictos h4 {
     -ms-grid-row-span: 3;
     grid-row: 7 / 10;
   }
-  html body .work .article_work .cosme1 {
+  html body .work .article_work .souris h3,
+  html body .work .article_work .souris p {
+    font-size: 2.5em;
+  }
+  html body .work .article_work .svgjinn {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
     -ms-grid-row: 10;
     -ms-grid-row-span: 3;
     grid-row: 10 / 13;
+  }
+  html body .work .article_work .svgjinn p {
+    margin-top: 3vw;
+  }
+  html body .work .article_work .svgjinn h3,
+  html body .work .article_work .svgjinn p {
+    font-size: 2.5em;
   }
   html body .work .article_work .contact_work {
     -ms-grid-column: 2;
@@ -1571,9 +1610,15 @@ html body .polyv .pictos h4 {
   html body .work .article_work .contact_work p {
     font-size: 2.5em;
   }
+  html body .work .article_work .cosme1 {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
+  html body .work {
+    max-width: 100%;
+  }
   html body .work .article_work {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1586,11 +1631,18 @@ html body .polyv .pictos h4 {
     -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
         grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     gap: 1.5vw;
-    margin-bottom: 200vw;
+    margin-bottom: 220vw;
     height: auto;
   }
-  html body .work .article_work a h3, html body .work .article_work a p {
-    font-size: 20px !important;
+  html body .work .article_work a h3,
+  html body .work .article_work a p {
+    font-size: 15px !important;
+  }
+  html body .work .article_work a h3 {
+    top: 5vw !important;
+  }
+  html body .work .article_work a p {
+    top: 15vw !important;
   }
   html body .work .article_work .savon {
     -ms-grid-column: 1;
@@ -1640,7 +1692,7 @@ html body .polyv .pictos h4 {
     -ms-grid-row-span: 2;
     grid-row: 11 / 13;
   }
-  html body .work .article_work .cosme1 {
+  html body .work .article_work .svgjinn {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
@@ -1659,6 +1711,34 @@ html body .polyv .pictos h4 {
   html body .work .article_work .contact_work h3,
   html body .work .article_work .contact_work p {
     font-size: 15px;
+  }
+  html body .servp {
+    margin-bottom: 150px !important;
+  }
+  html body .pres p {
+    font-size: 6vw;
+  }
+  html body .pres ul {
+    margin-bottom: 40px;
+  }
+  html body .pres ul li {
+    font-size: 5vw !important;
+  }
+}
+
+@media (max-width: 300px) {
+  html body .servp {
+    margin-bottom: 250px !important;
+  }
+  html body .pres p {
+    font-size: 8vw;
+    margin: 0;
+  }
+  html body .pres ul {
+    margin-bottom: 150px;
+  }
+  html body .pres ul li {
+    font-size: 6vw !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
