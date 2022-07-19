@@ -28,62 +28,13 @@
 }
 
 .hover_article {
-    &:hover {
-        img {
-            transform: scale(120%);
-            transition: 1s;
 
-        }
-
-        h3 {
-            top: 20px;
-            transition: 0.6s;
-            text-decoration: overline;
-        }
-
-        p {
-            top: 70px;
-            transition: 0.6s;
-        }
-
-    }
-
-    &:not(:hover) {
-
-        h3,
-        p {
-            transition: 0.6s;
-        }
-
-        img {
-            transition: 1s;
-
-        }
-    }
-
-    .shadow_work {
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        position: absolute;
-        opacity: 0;
-        z-index: 9;
-
-        &:hover {
-            opacity: 0.5;
-            transition: 0.7s;
-        }
-
-        &:not(:hover) {
-            transition: 0.7s;
-        }
-    }
 
     h3,
     p {
         position: absolute;
         z-index: 9;
-        color: white;
+        color: $creme;
 
     }
 
@@ -100,6 +51,57 @@
         padding: 0;
         display: block;
         text-align: left;
+    }
+
+    &:hover {
+        img {
+            transform: scale(120%);
+            transition: transform 1s;
+
+        }
+
+        h3 {
+            top: 10%;
+            transition: top 0.6s;
+            text-decoration: overline;
+        }
+
+        p {
+            top: 25%;
+            transition: top 0.6s;
+        }
+
+    }
+
+    &:not(:hover) {
+
+        h3,
+        p {
+            transition: top 0.6s;
+        }
+
+        img {
+            transition: transform 1s;
+
+        }
+    }
+
+    .shadow_work {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        opacity: 0;
+        z-index: 9;
+
+        &:hover {
+            opacity: 0.5;
+            transition: opacity 0.7s;
+        }
+
+        &:not(:hover) {
+            transition: opacity 0.7s;
+        }
     }
 }
 
@@ -203,19 +205,23 @@ html {
         ////////////////  TRAVAUX  ////////////// :
 
         .work {
+
+
+
             .article_work {
                 justify-content: center;
                 max-width: 100%;
                 display: grid;
                 grid-template-columns: 25% 25% 25%;
-                grid-template-rows: 10% 10% 10% 10% 10% 10% 10%;
-                column-gap: 20px;
-                row-gap: 20px;
-
+                grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+                gap: 1.5vw;
+                margin-bottom: 15vw;
+                height:auto;
                 a,
                 article {
                     position: relative;
                     z-index: 1;
+                    font-size: 1vw;
 
                     img {
                         display: block;
@@ -305,9 +311,9 @@ html {
                     }
                 }
 
-                .cosme2 {
+                .farmitoo {
                     grid-column: 2 / 3;
-                    grid-row: 6 / 10;
+                    grid-row: 6 / 11;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -334,7 +340,7 @@ html {
 
                 .souris {
                     grid-column: 1 / 2;
-                    grid-row: 7 / 10;
+                    grid-row: 7 / 11;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -343,14 +349,14 @@ html {
                     @extend .hover_article;
 
                     img {
-                        object-position: bottom;
+                        object-position: right;
                     }
                 }
 
 
                 .cosme1 {
                     grid-column: 3 / 4;
-                    grid-row: 7 / 10;
+                    grid-row: 7 / 11;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -386,7 +392,7 @@ html {
                 img {
                     display: block;
                     border: 1px solid $mauve;
-                    width: 100%;
+                    width: 300px;
                 }
             }
         }
@@ -422,65 +428,362 @@ html {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     html {
         body {
             .entete {
-                height:calc(100vh - 60px);
-                
-                .sc{
-                    
-                    img{
-                        height:calc(100vh - 60px);
-                        opacity:0.2;
-                        
+                height: calc(100vh - 60px);
+
+                .sc {
+
+                    img {
+                        height: calc(100vh - 60px);
+                        opacity: 0.2;
+
                     }
                 }
+
                 .titrelogo {
                     flex-direction: column;
-                    margin:0 auto;
-                    height:calc(100vh - 60px);
+                    margin: 0 auto;
+                    height: calc(100vh - 60px);
                     justify-content: center;
-                    padding-bottom: 150px;
+
                     h1 {
                         font-size: 1.5em;
-                        order:1;
-                        margin-top:50px;
-                        
+                        order: 1;
+                        margin-top: 50px;
+
                     }
-                    figure{
-                        img{
-                            order:2;
-                           
+
+                    figure {
+                        img {
+                            order: 2;
+
                         }
                     }
                 }
             }
-            .h2s{
-                margin:0;
-                .square{
-                    display:none;
+
+            .h2s {
+                margin: 0;
+
+                .square {
+                    display: none;
                 }
-                h2{
+
+                h2 {
                     margin-left: 0;
                     text-align: center;
                     font-size: 1.5em;
-                    margin:35px 0;
+                    margin: 100px 0;
+                    width: 100%;
                 }
             }
-            
-            .pres{
-                height:50vh;
+
+            .pres {
+                height: 50vh;
                 margin-left: 0;
                 padding: 0 20px;
-               row-gap: 30px;
+                row-gap: 30px;
                 justify-content: space-around;
-                p{
+
+                p {
                     font-size: 1.2em;
                     font-weight: 500;
                 }
-                li{
-                    font-size: 1em!important;
+
+                li {
+                    font-size: 1em !important;
+                }
+            }
+
+            .work {
+                .article_work {
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    .contact_work {
+                        h3 {
+                            font-size: 1.3em;
+                        }
+
+                        p {
+                            font-size: 1.3em;
+                        }
+                    }
+
+                    .hover_article {
+                        h3 {
+                            top: 20%;
+                            font-size: 2em;
+
+                            text-align: left;
+                        }
+
+                        p {
+                            top: 50%;
+                            font-size: 1.5em;
+                        }
+
+                        img {
+                            transform: scale(100%) !important;
+                        }
+
+                        .shadow_work {
+                            opacity: 0.5 !important;
+
+                        }
+
+                        &:hover {
+
+                            p,
+                            h3,
+                            img {
+                                transition: unset;
+                            }
+
+                            p {
+                                top: 50%;
+                            }
+
+                            h3 {
+                                top: 20%;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:not(:hover) {
+
+                            p,
+                            h3,
+                            img {
+                                transition: unset;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .apropos {
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 400px !important;
+                    margin: 0 auto;
+                    max-width: 100%;
+                }
+
+                article {
+                    p {
+                        margin-top: 50px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .fixed-footer {
+                height: 800px;
+
+                .footer_contain {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    height: 800px;
+
+                    .menu {
+                        text-align: center;
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+
+                        h3 {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .contact {
+                        text-align: center;
+                        width: 100%;
+
+                        h3 {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .logocreme {
+                        width: 170px;
+                        margin-top: 25px;
+                    }
+
+                    .iconsclick {
+                        display: flex;
+
+                        width: 100%;
+                        height: 100%;
+
+                        ul {
+                            display: flex;
+
+                            width: 100%;
+                            align-items: center;
+                            justify-content: center;
+
+                            li {
+                                width: 100%;
+
+                                a {
+                                    figure {
+                                        img {
+                                            width: 70px;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bg {
+                margin-bottom: 800px;
+            }
+
+            .polyv {
+                .pictos {
+                    figure {
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        body {
+            .work {
+                .article_work {
+                    justify-content: center;
+                    max-width: 100%;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+                    gap: 1.5vw;
+                    margin-bottom: 15vw;
+
+                    .savon {
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 4;
+                    }
+
+                    .troubleu {
+                        grid-column: 2 / 4;
+                        grid-row: 1 / 4;
+                    }
+
+                    .tft {
+                        grid-column: 1 / 2;
+                        grid-row: 4 / 7;
+                    }
+
+                    .rayon {
+                        grid-column: 2 / 4;
+                        grid-row: 4 / 7;
+                    }
+
+                    .farmitoo {
+                        grid-column: 1 / 2;
+                        grid-row: 7 / 10;
+                    }
+
+                    .souris {
+                        grid-column: 2 / 4;
+                        grid-row: 7 / 10;
+                    }
+
+                    .cosme1 {
+                        grid-column: 1 / 2;
+                        grid-row: 10 / 13;
+                    }
+
+                    .contact_work {
+                        grid-column: 2 / 4;
+                        grid-row: 10 / 13;
+                        h3, p{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    html {
+        body {
+            .work {
+                .article_work {
+                    justify-content: center;
+                    max-width: 100%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+                    gap: 1.5vw;
+                    margin-bottom: 200vw;
+                    height:auto;
+                    a{
+                        h3, p{
+                            font-size: 20px!important;
+                        }
+                    }
+                    .savon {
+                        grid-column: 1 / 2;
+                        grid-row: 1 / 3;
+                    }
+
+                    .troubleu {
+                        grid-column: 1 / 2;
+                        grid-row: 3 / 5;
+                    }
+
+                    .tft {
+                        grid-column: 1 / 2;
+                        grid-row: 5 / 7;
+                    }
+
+                    .rayon {
+                        grid-column: 1 / 2;
+                        grid-row: 7 / 9;
+                    }
+
+                    .farmitoo {
+                        grid-column: 1 / 2;
+                        grid-row: 9 / 11;
+                    }
+
+                    .souris {
+                        grid-column: 1 / 2;
+                        grid-row: 11 / 13;
+                    }
+
+                    .cosme1 {
+                        grid-column: 1 / 2;
+                        grid-row: 13 / 15;
+                    }
+
+                    .contact_work {
+                        grid-column: 1 / 2;
+                        grid-row: 15 / 17;
+                        h3, p{
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
         }

@@ -742,81 +742,22 @@ nav .main-navlinks .navlinks-container a:hover:after {
   margin-left: 60px;
 }
 
-.hover_article:hover img, html body .work .article_work .savon:hover img, html body .work .article_work .troubleu:hover img, html body .work .article_work .tft:hover img, html body .work .article_work .rayon:hover img, html body .work .article_work .cosme2:hover img, html body .work .article_work .svgjinn:hover img, html body .work .article_work .souris:hover img, html body .work .article_work .cosme1:hover img {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.hover_article:hover h3, html body .work .article_work .savon:hover h3, html body .work .article_work .troubleu:hover h3, html body .work .article_work .tft:hover h3, html body .work .article_work .rayon:hover h3, html body .work .article_work .cosme2:hover h3, html body .work .article_work .svgjinn:hover h3, html body .work .article_work .souris:hover h3, html body .work .article_work .cosme1:hover h3 {
-  top: 20px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  text-decoration: overline;
-}
-
-.hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .cosme2:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
-  top: 70px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.hover_article:not(:hover) h3, html body .work .article_work .savon:not(:hover) h3, html body .work .article_work .troubleu:not(:hover) h3, html body .work .article_work .tft:not(:hover) h3, html body .work .article_work .rayon:not(:hover) h3, html body .work .article_work .cosme2:not(:hover) h3, html body .work .article_work .svgjinn:not(:hover) h3, html body .work .article_work .souris:not(:hover) h3, html body .work .article_work .cosme1:not(:hover) h3,
-.hover_article:not(:hover) p,
-html body .work .article_work .savon:not(:hover) p,
-html body .work .article_work .troubleu:not(:hover) p,
-html body .work .article_work .tft:not(:hover) p,
-html body .work .article_work .rayon:not(:hover) p,
-html body .work .article_work .cosme2:not(:hover) p,
-html body .work .article_work .svgjinn:not(:hover) p,
-html body .work .article_work .souris:not(:hover) p,
-html body .work .article_work .cosme1:not(:hover) p {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.hover_article:not(:hover) img, html body .work .article_work .savon:not(:hover) img, html body .work .article_work .troubleu:not(:hover) img, html body .work .article_work .tft:not(:hover) img, html body .work .article_work .rayon:not(:hover) img, html body .work .article_work .cosme2:not(:hover) img, html body .work .article_work .svgjinn:not(:hover) img, html body .work .article_work .souris:not(:hover) img, html body .work .article_work .cosme1:not(:hover) img {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.hover_article .shadow_work, html body .work .article_work .savon .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .cosme2 .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .cosme1 .shadow_work {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0;
-  z-index: 9;
-}
-
-.hover_article .shadow_work:hover, html body .work .article_work .savon .shadow_work:hover, html body .work .article_work .troubleu .shadow_work:hover, html body .work .article_work .tft .shadow_work:hover, html body .work .article_work .rayon .shadow_work:hover, html body .work .article_work .cosme2 .shadow_work:hover, html body .work .article_work .svgjinn .shadow_work:hover, html body .work .article_work .souris .shadow_work:hover, html body .work .article_work .cosme1 .shadow_work:hover {
-  opacity: 0.5;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.hover_article .shadow_work:not(:hover), html body .work .article_work .savon .shadow_work:not(:hover), html body .work .article_work .troubleu .shadow_work:not(:hover), html body .work .article_work .tft .shadow_work:not(:hover), html body .work .article_work .rayon .shadow_work:not(:hover), html body .work .article_work .cosme2 .shadow_work:not(:hover), html body .work .article_work .svgjinn .shadow_work:not(:hover), html body .work .article_work .souris .shadow_work:not(:hover), html body .work .article_work .cosme1 .shadow_work:not(:hover) {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .cosme2 h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3,
+.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3,
 .hover_article p,
 html body .work .article_work .savon p,
 html body .work .article_work .troubleu p,
 html body .work .article_work .tft p,
 html body .work .article_work .rayon p,
-html body .work .article_work .cosme2 p,
+html body .work .article_work .farmitoo p,
 html body .work .article_work .svgjinn p,
 html body .work .article_work .souris p,
 html body .work .article_work .cosme1 p {
   position: absolute;
   z-index: 9;
-  color: white;
+  color: #fcf8e3;
 }
 
-.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .cosme2 h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
+.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
   top: -50px;
   left: 20px;
   font-size: 1.2em;
@@ -828,7 +769,7 @@ html body .work .article_work .savon p,
 html body .work .article_work .troubleu p,
 html body .work .article_work .tft p,
 html body .work .article_work .rayon p,
-html body .work .article_work .cosme2 p,
+html body .work .article_work .farmitoo p,
 html body .work .article_work .svgjinn p,
 html body .work .article_work .souris p,
 html body .work .article_work .cosme1 p {
@@ -838,6 +779,69 @@ html body .work .article_work .cosme1 p {
   padding: 0;
   display: block;
   text-align: left;
+}
+
+.hover_article:hover img, html body .work .article_work .savon:hover img, html body .work .article_work .troubleu:hover img, html body .work .article_work .tft:hover img, html body .work .article_work .rayon:hover img, html body .work .article_work .farmitoo:hover img, html body .work .article_work .svgjinn:hover img, html body .work .article_work .souris:hover img, html body .work .article_work .cosme1:hover img {
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.hover_article:hover h3, html body .work .article_work .savon:hover h3, html body .work .article_work .troubleu:hover h3, html body .work .article_work .tft:hover h3, html body .work .article_work .rayon:hover h3, html body .work .article_work .farmitoo:hover h3, html body .work .article_work .svgjinn:hover h3, html body .work .article_work .souris:hover h3, html body .work .article_work .cosme1:hover h3 {
+  top: 10%;
+  -webkit-transition: top 0.6s;
+  transition: top 0.6s;
+  text-decoration: overline;
+}
+
+.hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
+  top: 25%;
+  -webkit-transition: top 0.6s;
+  transition: top 0.6s;
+}
+
+.hover_article:not(:hover) h3, html body .work .article_work .savon:not(:hover) h3, html body .work .article_work .troubleu:not(:hover) h3, html body .work .article_work .tft:not(:hover) h3, html body .work .article_work .rayon:not(:hover) h3, html body .work .article_work .farmitoo:not(:hover) h3, html body .work .article_work .svgjinn:not(:hover) h3, html body .work .article_work .souris:not(:hover) h3, html body .work .article_work .cosme1:not(:hover) h3,
+.hover_article:not(:hover) p,
+html body .work .article_work .savon:not(:hover) p,
+html body .work .article_work .troubleu:not(:hover) p,
+html body .work .article_work .tft:not(:hover) p,
+html body .work .article_work .rayon:not(:hover) p,
+html body .work .article_work .farmitoo:not(:hover) p,
+html body .work .article_work .svgjinn:not(:hover) p,
+html body .work .article_work .souris:not(:hover) p,
+html body .work .article_work .cosme1:not(:hover) p {
+  -webkit-transition: top 0.6s;
+  transition: top 0.6s;
+}
+
+.hover_article:not(:hover) img, html body .work .article_work .savon:not(:hover) img, html body .work .article_work .troubleu:not(:hover) img, html body .work .article_work .tft:not(:hover) img, html body .work .article_work .rayon:not(:hover) img, html body .work .article_work .farmitoo:not(:hover) img, html body .work .article_work .svgjinn:not(:hover) img, html body .work .article_work .souris:not(:hover) img, html body .work .article_work .cosme1:not(:hover) img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.hover_article .shadow_work, html body .work .article_work .savon .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .farmitoo .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .cosme1 .shadow_work {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0;
+  z-index: 9;
+}
+
+.hover_article .shadow_work:hover, html body .work .article_work .savon .shadow_work:hover, html body .work .article_work .troubleu .shadow_work:hover, html body .work .article_work .tft .shadow_work:hover, html body .work .article_work .rayon .shadow_work:hover, html body .work .article_work .farmitoo .shadow_work:hover, html body .work .article_work .svgjinn .shadow_work:hover, html body .work .article_work .souris .shadow_work:hover, html body .work .article_work .cosme1 .shadow_work:hover {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.hover_article .shadow_work:not(:hover), html body .work .article_work .savon .shadow_work:not(:hover), html body .work .article_work .troubleu .shadow_work:not(:hover), html body .work .article_work .tft .shadow_work:not(:hover), html body .work .article_work .rayon .shadow_work:not(:hover), html body .work .article_work .farmitoo .shadow_work:not(:hover), html body .work .article_work .svgjinn .shadow_work:not(:hover), html body .work .article_work .souris .shadow_work:not(:hover), html body .work .article_work .cosme1 .shadow_work:not(:hover) {
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
 }
 
 html {
@@ -949,17 +953,18 @@ html body .work .article_work {
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
       grid-template-columns: 25% 25% 25%;
-  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10%;
-      grid-template-rows: 10% 10% 10% 10% 10% 10% 10%;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 20px;
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  gap: 1.5vw;
+  margin-bottom: 15vw;
+  height: auto;
 }
 
 html body .work .article_work a,
 html body .work .article_work article {
   position: relative;
   z-index: 1;
+  font-size: 1vw;
 }
 
 html body .work .article_work a img,
@@ -1097,13 +1102,13 @@ html body .work .article_work .contact_work p {
   color: white;
 }
 
-html body .work .article_work .cosme2 {
+html body .work .article_work .farmitoo {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   -ms-grid-row: 6;
-  -ms-grid-row-span: 4;
-  grid-row: 6 / 10;
+  -ms-grid-row-span: 5;
+  grid-row: 6 / 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1149,8 +1154,8 @@ html body .work .article_work .souris {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   -ms-grid-row: 7;
-  -ms-grid-row-span: 3;
-  grid-row: 7 / 10;
+  -ms-grid-row-span: 4;
+  grid-row: 7 / 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1166,8 +1171,8 @@ html body .work .article_work .souris {
 }
 
 html body .work .article_work .souris img {
-  -o-object-position: bottom;
-     object-position: bottom;
+  -o-object-position: right;
+     object-position: right;
 }
 
 html body .work .article_work .cosme1 {
@@ -1175,8 +1180,8 @@ html body .work .article_work .cosme1 {
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
   -ms-grid-row: 7;
-  -ms-grid-row-span: 3;
-  grid-row: 7 / 10;
+  -ms-grid-row-span: 4;
+  grid-row: 7 / 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,7 +1223,7 @@ html body .apropos article p {
 html body .apropos article img {
   display: block;
   border: 1px solid #624b63;
-  width: 100%;
+  width: 300px;
 }
 
 html body .polyv {
@@ -1252,7 +1257,7 @@ html body .polyv .pictos h4 {
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   html body .entete {
     height: calc(100vh - 60px);
   }
@@ -1270,7 +1275,6 @@ html body .polyv .pictos h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 150px;
   }
   html body .entete .titrelogo h1 {
     font-size: 1.5em;
@@ -1294,7 +1298,8 @@ html body .polyv .pictos h4 {
     margin-left: 0;
     text-align: center;
     font-size: 1.5em;
-    margin: 35px 0;
+    margin: 100px 0;
+    width: 100%;
   }
   html body .pres {
     height: 50vh;
@@ -1310,6 +1315,350 @@ html body .polyv .pictos h4 {
   }
   html body .pres li {
     font-size: 1em !important;
+  }
+  html body .work .article_work {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  html body .work .article_work .contact_work h3 {
+    font-size: 1.3em;
+  }
+  html body .work .article_work .contact_work p {
+    font-size: 1.3em;
+  }
+  html body .work .article_work .hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
+    top: 20%;
+    font-size: 2em;
+    text-align: left;
+  }
+  html body .work .article_work .hover_article p, html body .work .article_work .savon p, html body .work .article_work .troubleu p, html body .work .article_work .tft p, html body .work .article_work .rayon p, html body .work .article_work .farmitoo p, html body .work .article_work .svgjinn p, html body .work .article_work .souris p, html body .work .article_work .cosme1 p {
+    top: 50%;
+    font-size: 1.5em;
+  }
+  html body .work .article_work .hover_article img, html body .work .article_work .savon img, html body .work .article_work .troubleu img, html body .work .article_work .tft img, html body .work .article_work .rayon img, html body .work .article_work .farmitoo img, html body .work .article_work .svgjinn img, html body .work .article_work .souris img, html body .work .article_work .cosme1 img {
+    -webkit-transform: scale(100%) !important;
+            transform: scale(100%) !important;
+  }
+  html body .work .article_work .hover_article .shadow_work, html body .work .article_work .savon .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .farmitoo .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .cosme1 .shadow_work {
+    opacity: 0.5 !important;
+  }
+  html body .work .article_work .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p,
+  html body .work .article_work .hover_article:hover h3,
+  html body .work .article_work .savon:hover h3,
+  html body .work .article_work .troubleu:hover h3,
+  html body .work .article_work .tft:hover h3,
+  html body .work .article_work .rayon:hover h3,
+  html body .work .article_work .farmitoo:hover h3,
+  html body .work .article_work .svgjinn:hover h3,
+  html body .work .article_work .souris:hover h3,
+  html body .work .article_work .cosme1:hover h3,
+  html body .work .article_work .hover_article:hover img,
+  html body .work .article_work .savon:hover img,
+  html body .work .article_work .troubleu:hover img,
+  html body .work .article_work .tft:hover img,
+  html body .work .article_work .rayon:hover img,
+  html body .work .article_work .farmitoo:hover img,
+  html body .work .article_work .svgjinn:hover img,
+  html body .work .article_work .souris:hover img,
+  html body .work .article_work .cosme1:hover img {
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  html body .work .article_work .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
+    top: 50%;
+  }
+  
+  html body .work .article_work .hover_article:hover h3,
+  html body .work .article_work .savon:hover h3,
+  html body .work .article_work .troubleu:hover h3,
+  html body .work .article_work .tft:hover h3,
+  html body .work .article_work .rayon:hover h3,
+  html body .work .article_work .farmitoo:hover h3,
+  html body .work .article_work .svgjinn:hover h3,
+  html body .work .article_work .souris:hover h3,
+  html body .work .article_work .cosme1:hover h3 {
+    top: 20%;
+    text-decoration: none;
+  }
+  html body .work .article_work .hover_article:not(:hover) p, html body .work .article_work .savon:not(:hover) p, html body .work .article_work .troubleu:not(:hover) p, html body .work .article_work .tft:not(:hover) p, html body .work .article_work .rayon:not(:hover) p, html body .work .article_work .farmitoo:not(:hover) p, html body .work .article_work .svgjinn:not(:hover) p, html body .work .article_work .souris:not(:hover) p, html body .work .article_work .cosme1:not(:hover) p,
+  html body .work .article_work .hover_article:not(:hover) h3,
+  html body .work .article_work .savon:not(:hover) h3,
+  html body .work .article_work .troubleu:not(:hover) h3,
+  html body .work .article_work .tft:not(:hover) h3,
+  html body .work .article_work .rayon:not(:hover) h3,
+  html body .work .article_work .farmitoo:not(:hover) h3,
+  html body .work .article_work .svgjinn:not(:hover) h3,
+  html body .work .article_work .souris:not(:hover) h3,
+  html body .work .article_work .cosme1:not(:hover) h3,
+  html body .work .article_work .hover_article:not(:hover) img,
+  html body .work .article_work .savon:not(:hover) img,
+  html body .work .article_work .troubleu:not(:hover) img,
+  html body .work .article_work .tft:not(:hover) img,
+  html body .work .article_work .rayon:not(:hover) img,
+  html body .work .article_work .farmitoo:not(:hover) img,
+  html body .work .article_work .svgjinn:not(:hover) img,
+  html body .work .article_work .souris:not(:hover) img,
+  html body .work .article_work .cosme1:not(:hover) img {
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  html body .apropos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  html body .apropos img {
+    width: 400px !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  html body .apropos article p {
+    margin-top: 50px;
+    text-align: center;
+  }
+  html body .fixed-footer {
+    height: 800px;
+  }
+  html body .fixed-footer .footer_contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 800px;
+  }
+  html body .fixed-footer .footer_contain .menu {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  html body .fixed-footer .footer_contain .menu h3 {
+    margin-bottom: 15px;
+  }
+  html body .fixed-footer .footer_contain .contact {
+    text-align: center;
+    width: 100%;
+  }
+  html body .fixed-footer .footer_contain .contact h3 {
+    margin-bottom: 15px;
+  }
+  html body .fixed-footer .footer_contain .logocreme {
+    width: 170px;
+    margin-top: 25px;
+  }
+  html body .fixed-footer .footer_contain .iconsclick {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  html body .fixed-footer .footer_contain .iconsclick ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .fixed-footer .footer_contain .iconsclick ul li {
+    width: 100%;
+  }
+  html body .fixed-footer .footer_contain .iconsclick ul li a figure img {
+    width: 70px;
+  }
+  html body .bg {
+    margin-bottom: 800px;
+  }
+  html body .polyv .pictos figure img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  html body .work .article_work {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    gap: 1.5vw;
+    margin-bottom: 15vw;
+  }
+  html body .work .article_work .savon {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+  }
+  html body .work .article_work .troubleu {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+  }
+  html body .work .article_work .tft {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    grid-row: 4 / 7;
+  }
+  html body .work .article_work .rayon {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    grid-row: 4 / 7;
+  }
+  html body .work .article_work .farmitoo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    grid-row: 7 / 10;
+  }
+  html body .work .article_work .souris {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    grid-row: 7 / 10;
+  }
+  html body .work .article_work .cosme1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 3;
+    grid-row: 10 / 13;
+  }
+  html body .work .article_work .contact_work {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 3;
+    grid-row: 10 / 13;
+  }
+  html body .work .article_work .contact_work h3,
+  html body .work .article_work .contact_work p {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  html body .work .article_work {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    gap: 1.5vw;
+    margin-bottom: 200vw;
+    height: auto;
+  }
+  html body .work .article_work a h3, html body .work .article_work a p {
+    font-size: 20px !important;
+  }
+  html body .work .article_work .savon {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+  html body .work .article_work .troubleu {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / 5;
+  }
+  html body .work .article_work .tft {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5 / 7;
+  }
+  html body .work .article_work .rayon {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    grid-row: 7 / 9;
+  }
+  html body .work .article_work .farmitoo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    grid-row: 9 / 11;
+  }
+  html body .work .article_work .souris {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 2;
+    grid-row: 11 / 13;
+  }
+  html body .work .article_work .cosme1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    grid-row: 13 / 15;
+  }
+  html body .work .article_work .contact_work {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 15;
+    -ms-grid-row-span: 2;
+    grid-row: 15 / 17;
+  }
+  html body .work .article_work .contact_work h3,
+  html body .work .article_work .contact_work p {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
