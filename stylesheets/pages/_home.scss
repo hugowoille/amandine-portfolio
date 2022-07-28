@@ -131,6 +131,9 @@ html {
             justify-content: space-around;
             height: 300px;
             align-items: center;
+            -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 1);
 
             .sc {
                 img {
@@ -140,6 +143,7 @@ html {
                     opacity: 0.4;
                     display: block;
                     max-width: 100%;
+                    
                 }
             }
 
