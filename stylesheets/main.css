@@ -857,6 +857,8 @@ html body .bg {
   position: relative;
   margin-bottom: 400px;
   max-width: 100%;
+  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
 
 html body .entete {
@@ -938,13 +940,15 @@ html body .pres {
 html body .pres p {
   font-family: "Arapey", serif;
   color: #624b63;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  padding-right: 20vw;
+  font-weight: 500;
 }
 
 html body .pres ul li {
   color: #624b63;
   font-family: "Arapey", serif;
-  font-size: 1.2em;
+  font-size: 1em;
   list-style-type: disc;
   margin-left: 20px;
 }
@@ -962,7 +966,6 @@ html body .work .article_work {
       grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   gap: 1.5vw;
   margin-bottom: 15vw;
-  height: auto;
 }
 
 html body .work .article_work a,
@@ -1303,20 +1306,22 @@ html body .polyv .pictos h4 {
     margin-left: 0;
     text-align: center;
     font-size: 1.5em;
-    margin: 100px 0;
     width: 100%;
   }
   html body .pres {
-    height: 50vh;
-    margin-left: 0;
-    padding: 0 20px;
-    row-gap: 30px;
+    border: none;
+    margin: 0 auto;
+    padding-right: 0 !important;
+    padding-left: 20px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   html body .pres p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
+    text-align: center;
+    padding: 0;
+    padding-right: 20px;
   }
   html body .pres li {
     font-size: 1em !important;
@@ -1718,9 +1723,6 @@ html body .polyv .pictos h4 {
   html body .pres p {
     font-size: 6vw;
   }
-  html body .pres ul {
-    margin-bottom: 40px;
-  }
   html body .pres ul li {
     font-size: 5vw !important;
   }
@@ -1733,9 +1735,6 @@ html body .polyv .pictos h4 {
   html body .pres p {
     font-size: 8vw;
     margin: 0;
-  }
-  html body .pres ul {
-    margin-bottom: 150px;
   }
   html body .pres ul li {
     font-size: 6vw !important;
