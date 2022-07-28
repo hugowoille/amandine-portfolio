@@ -740,8 +740,8 @@ nav .main-navlinks .navlinks-container a:hover:after {
 .carre, html body .h2s .square {
   height: 60px;
   width: 60px;
-  border: 2px solid #624b63;
   margin-left: 60px;
+  background-color: #624b63;
 }
 
 .hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3,
