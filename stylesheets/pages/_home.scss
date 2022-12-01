@@ -13,8 +13,7 @@
     width: 1000px;
     align-self: center;
     padding-left: 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin : 50px 0;
     line-height: 60px;
     margin-left: 20px;
     font-size: 2em;
@@ -876,15 +875,12 @@ html {
                     }
                 }
             }
-            .servp{
-                margin-bottom: 150px!important;
-            }
+            
             .pres {
                 p {
                     font-size: 6vw;
                     
                 }
-
                 ul {
                     li {
                         font-size: 5vw !important;
@@ -901,9 +897,6 @@ html {
 @media (max-width: 300px) {
     html {
         body {
-            .servp{
-                margin-bottom:250px!important;
-            }
             .pres{
                 
                 p {

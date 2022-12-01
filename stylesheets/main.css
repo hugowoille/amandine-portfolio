@@ -9,10 +9,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -47,13 +45,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -61,10 +55,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -81,13 +73,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -105,10 +94,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -158,14 +145,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -173,8 +156,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -183,8 +165,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -192,9 +173,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -202,9 +183,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -213,9 +194,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -233,19 +214,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -266,20 +240,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -287,17 +258,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -306,10 +275,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -348,8 +315,7 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -361,20 +327,18 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /**
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: rgb(229, 0, 80);
   text-decoration: none;
 }
-
 a:hover, a:active, a:focus {
-  color: #222222;
+  color: rgb(34, 34, 34);
   text-decoration: underline;
 }
 
@@ -394,7 +358,7 @@ ul, li, p, h1, h2, h3, img, figure, article, section, main, header, nav, footer,
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
+  color: rgb(34, 34, 34);
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -403,7 +367,7 @@ body {
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -414,18 +378,12 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */
+  max-width: 1180px; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 20px; /* 3 */
+  padding-right: 20px; /* 3 */
+  width: 100%; /* 1 */
 }
 
 /**
@@ -435,8 +393,7 @@ body {
  */
 .hide-text {
   overflow: hidden;
-  padding: 0;
-  /* 1 */
+  padding: 0; /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -466,58 +423,40 @@ footer {
   background-color: #624b63;
   max-width: 100%;
 }
-
 footer .footer_contain {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   height: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  align-items: center;
+  flex-basis: 0;
   font-family: "Montserrat", sans-serif;
   max-width: 100%;
 }
-
 footer .footer_contain .logocreme {
   width: 250px;
 }
-
 footer .footer_contain .menu h3, footer .footer_contain .contact h3 {
   color: #342a35;
   margin-bottom: 50px;
 }
-
 footer .footer_contain .menu a, footer .footer_contain .contact a {
   color: #fcf8e3;
 }
-
 footer .footer_contain .menu li, footer .footer_contain .contact li {
   color: #fcf8e3;
 }
-
 footer .footer_contain .iconsclick {
   color: #fcf8e3;
   text-align: center;
   width: 60px;
 }
-
 footer .footer_contain .iconsclick img, footer .footer_contain .iconsclick p {
   margin-bottom: 10px;
 }
-
 footer .footer_contain .iconsclick p {
   font-size: 0.7em;
 }
-
 footer .copy {
   position: absolute;
   color: #fcf8e3;
@@ -531,8 +470,7 @@ footer .copy {
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -540,48 +478,32 @@ footer .copy {
 nav {
   position: fixed;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   top: 0;
   background: #624b63;
   height: 60px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   z-index: 20;
 }
-
 nav .nav-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   margin-right: 20px;
   margin-left: 20px;
 }
-
 nav .nav-icon img {
   width: 100px;
 }
-
 nav .main-navlinks .hamburger {
   display: none;
 }
-
 nav .main-navlinks .navlinks-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 5vw;
-          column-gap: 5vw;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
 }
-
 nav .main-navlinks .navlinks-container a {
   font-family: "Lobster Two", cursive;
   text-decoration: none;
@@ -590,7 +512,6 @@ nav .main-navlinks .navlinks-container a {
   display: inline-block;
   position: relative;
 }
-
 nav .main-navlinks .navlinks-container a:after {
   content: "";
   display: block;
@@ -598,57 +519,38 @@ nav .main-navlinks .navlinks-container a:after {
   bottom: -3px;
   width: 100%;
   height: 1px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  transform: scale(0);
+  transform-origin: left;
   background: #fcf8e3;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
-
 nav .main-navlinks .navlinks-container a:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @media (max-width: 900px) {
   nav {
     position: fixed;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   nav .nav-icon {
     width: 90px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   nav .nav-icon span {
     font-size: 22px;
   }
   nav .main-navlinks .navlinks-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     top: 100%;
     background-color: #624b63;
     left: 0;
     height: auto;
     width: 100%;
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    transform: translate(-100%);
     padding: 10px 50px 15px 20px;
   }
   nav .main-navlinks .navlinks-container a {
@@ -661,13 +563,9 @@ nav .main-navlinks .navlinks-container a:hover:after {
     height: 20px;
     cursor: pointer;
     border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     background: transparent;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
     margin-left: 25px;
   }
@@ -678,60 +576,45 @@ nav .main-navlinks .navlinks-container a:hover:after {
     background: #fcf8e3;
     position: absolute;
     pointer-events: none;
-    -webkit-transition: opacity 0.3s 0.15s ease-out;
     transition: opacity 0.3s 0.15s ease-out;
   }
   nav .main-navlinks .hamburger span:nth-child(1), nav .main-navlinks .hamburger span:nth-child(3) {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   }
   nav .main-navlinks .hamburger span:nth-child(1) {
-    -webkit-transform: translateY(7px);
-            transform: translateY(7px);
+    transform: translateY(7px);
   }
   nav .main-navlinks .hamburger span:nth-child(3) {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
+    transform: translateY(-7px);
   }
   nav .main-navlinks .open {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
   }
   nav .main-navlinks .hamburger.open span:nth-child(1) {
-    -webkit-transform: translate(0) rotate(135deg);
-            transform: translate(0) rotate(135deg);
+    transform: translate(0) rotate(135deg);
   }
   nav .main-navlinks .hamburger.open span:nth-child(2) {
     opacity: 0;
-    -webkit-transition: opacity 0.3s 0.15s ease-out;
     transition: opacity 0.3s 0.15s ease-out;
   }
   nav .main-navlinks .hamburger.open span:nth-child(3) {
-    -webkit-transform: translate(0) rotate(-135deg);
-            transform: translate(0) rotate(-135deg);
+    transform: translate(0) rotate(-135deg);
   }
 }
-
 @media (max-width: 500px) {
   nav .nav-icon {
     width: 80px;
   }
 }
-
 .title, html body .h2s h2 {
   color: #fcf8e3;
   background-color: #624b63;
   font-family: "Lobster Two", cursive;
   height: 60px;
   width: 1000px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   padding-left: 20px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 50px 0;
   line-height: 60px;
   margin-left: 20px;
   font-size: 2em;
@@ -744,37 +627,26 @@ nav .main-navlinks .navlinks-container a:hover:after {
   background-color: #624b63;
 }
 
-.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3,
+.hover_article h3, html body .work .article_work .cosme1 h3, html body .work .article_work .souris h3, html body .work .article_work .svgjinn h3, html body .work .article_work .farmitoo h3, html body .work .article_work .rayon h3, html body .work .article_work .tft h3, html body .work .article_work .troubleu h3, html body .work .article_work .savon h3,
 .hover_article p,
-html body .work .article_work .savon p,
-html body .work .article_work .troubleu p,
-html body .work .article_work .tft p,
-html body .work .article_work .rayon p,
-html body .work .article_work .farmitoo p,
-html body .work .article_work .svgjinn p,
+html body .work .article_work .cosme1 p,
 html body .work .article_work .souris p,
-html body .work .article_work .cosme1 p {
+html body .work .article_work .svgjinn p,
+html body .work .article_work .farmitoo p,
+html body .work .article_work .rayon p,
+html body .work .article_work .tft p,
+html body .work .article_work .troubleu p,
+html body .work .article_work .savon p {
   position: absolute;
   z-index: 9;
   color: #fcf8e3;
 }
-
-.hover_article h3, html body .work .article_work .savon h3, html body .work .article_work .troubleu h3, html body .work .article_work .tft h3, html body .work .article_work .rayon h3, html body .work .article_work .farmitoo h3, html body .work .article_work .svgjinn h3, html body .work .article_work .souris h3, html body .work .article_work .cosme1 h3 {
+.hover_article h3, html body .work .article_work .cosme1 h3, html body .work .article_work .souris h3, html body .work .article_work .svgjinn h3, html body .work .article_work .farmitoo h3, html body .work .article_work .rayon h3, html body .work .article_work .tft h3, html body .work .article_work .troubleu h3, html body .work .article_work .savon h3 {
   top: -50px;
   left: 20px;
   font-size: 1.2em;
 }
-
-
-.hover_article p,
-html body .work .article_work .savon p,
-html body .work .article_work .troubleu p,
-html body .work .article_work .tft p,
-html body .work .article_work .rayon p,
-html body .work .article_work .farmitoo p,
-html body .work .article_work .svgjinn p,
-html body .work .article_work .souris p,
-html body .work .article_work .cosme1 p {
+.hover_article p, html body .work .article_work .cosme1 p, html body .work .article_work .souris p, html body .work .article_work .svgjinn p, html body .work .article_work .farmitoo p, html body .work .article_work .rayon p, html body .work .article_work .tft p, html body .work .article_work .troubleu p, html body .work .article_work .savon p {
   top: -90px;
   left: 20px;
   margin: 0;
@@ -782,51 +654,35 @@ html body .work .article_work .cosme1 p {
   display: block;
   text-align: left;
 }
-
-.hover_article:hover img, html body .work .article_work .savon:hover img, html body .work .article_work .troubleu:hover img, html body .work .article_work .tft:hover img, html body .work .article_work .rayon:hover img, html body .work .article_work .farmitoo:hover img, html body .work .article_work .svgjinn:hover img, html body .work .article_work .souris:hover img, html body .work .article_work .cosme1:hover img {
-  -webkit-transform: scale(120%);
-          transform: scale(120%);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
+.hover_article:hover img, html body .work .article_work .cosme1:hover img, html body .work .article_work .souris:hover img, html body .work .article_work .svgjinn:hover img, html body .work .article_work .farmitoo:hover img, html body .work .article_work .rayon:hover img, html body .work .article_work .tft:hover img, html body .work .article_work .troubleu:hover img, html body .work .article_work .savon:hover img {
+  transform: scale(120%);
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
 }
-
-.hover_article:hover h3, html body .work .article_work .savon:hover h3, html body .work .article_work .troubleu:hover h3, html body .work .article_work .tft:hover h3, html body .work .article_work .rayon:hover h3, html body .work .article_work .farmitoo:hover h3, html body .work .article_work .svgjinn:hover h3, html body .work .article_work .souris:hover h3, html body .work .article_work .cosme1:hover h3 {
+.hover_article:hover h3, html body .work .article_work .cosme1:hover h3, html body .work .article_work .souris:hover h3, html body .work .article_work .svgjinn:hover h3, html body .work .article_work .farmitoo:hover h3, html body .work .article_work .rayon:hover h3, html body .work .article_work .tft:hover h3, html body .work .article_work .troubleu:hover h3, html body .work .article_work .savon:hover h3 {
   top: 10%;
-  -webkit-transition: top 0.6s;
   transition: top 0.6s;
   text-decoration: overline;
 }
-
-.hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
+.hover_article:hover p, html body .work .article_work .cosme1:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .savon:hover p {
   top: 25%;
-  -webkit-transition: top 0.6s;
   transition: top 0.6s;
 }
-
-.hover_article:not(:hover) h3, html body .work .article_work .savon:not(:hover) h3, html body .work .article_work .troubleu:not(:hover) h3, html body .work .article_work .tft:not(:hover) h3, html body .work .article_work .rayon:not(:hover) h3, html body .work .article_work .farmitoo:not(:hover) h3, html body .work .article_work .svgjinn:not(:hover) h3, html body .work .article_work .souris:not(:hover) h3, html body .work .article_work .cosme1:not(:hover) h3,
+.hover_article:not(:hover) h3, html body .work .article_work .cosme1:not(:hover) h3, html body .work .article_work .souris:not(:hover) h3, html body .work .article_work .svgjinn:not(:hover) h3, html body .work .article_work .farmitoo:not(:hover) h3, html body .work .article_work .rayon:not(:hover) h3, html body .work .article_work .tft:not(:hover) h3, html body .work .article_work .troubleu:not(:hover) h3, html body .work .article_work .savon:not(:hover) h3,
 .hover_article:not(:hover) p,
-html body .work .article_work .savon:not(:hover) p,
-html body .work .article_work .troubleu:not(:hover) p,
-html body .work .article_work .tft:not(:hover) p,
-html body .work .article_work .rayon:not(:hover) p,
-html body .work .article_work .farmitoo:not(:hover) p,
-html body .work .article_work .svgjinn:not(:hover) p,
+html body .work .article_work .cosme1:not(:hover) p,
 html body .work .article_work .souris:not(:hover) p,
-html body .work .article_work .cosme1:not(:hover) p {
-  -webkit-transition: top 0.6s;
+html body .work .article_work .svgjinn:not(:hover) p,
+html body .work .article_work .farmitoo:not(:hover) p,
+html body .work .article_work .rayon:not(:hover) p,
+html body .work .article_work .tft:not(:hover) p,
+html body .work .article_work .troubleu:not(:hover) p,
+html body .work .article_work .savon:not(:hover) p {
   transition: top 0.6s;
 }
-
-.hover_article:not(:hover) img, html body .work .article_work .savon:not(:hover) img, html body .work .article_work .troubleu:not(:hover) img, html body .work .article_work .tft:not(:hover) img, html body .work .article_work .rayon:not(:hover) img, html body .work .article_work .farmitoo:not(:hover) img, html body .work .article_work .svgjinn:not(:hover) img, html body .work .article_work .souris:not(:hover) img, html body .work .article_work .cosme1:not(:hover) img {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
+.hover_article:not(:hover) img, html body .work .article_work .cosme1:not(:hover) img, html body .work .article_work .souris:not(:hover) img, html body .work .article_work .svgjinn:not(:hover) img, html body .work .article_work .farmitoo:not(:hover) img, html body .work .article_work .rayon:not(:hover) img, html body .work .article_work .tft:not(:hover) img, html body .work .article_work .troubleu:not(:hover) img, html body .work .article_work .savon:not(:hover) img {
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
 }
-
-.hover_article .shadow_work, html body .work .article_work .savon .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .farmitoo .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .cosme1 .shadow_work {
+.hover_article .shadow_work, html body .work .article_work .cosme1 .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .farmitoo .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .savon .shadow_work {
   width: 100%;
   height: 100%;
   background-color: black;
@@ -835,49 +691,35 @@ html body .work .article_work .cosme1:not(:hover) p {
   z-index: 9;
   max-width: 100%;
 }
-
-.hover_article .shadow_work:hover, html body .work .article_work .savon .shadow_work:hover, html body .work .article_work .troubleu .shadow_work:hover, html body .work .article_work .tft .shadow_work:hover, html body .work .article_work .rayon .shadow_work:hover, html body .work .article_work .farmitoo .shadow_work:hover, html body .work .article_work .svgjinn .shadow_work:hover, html body .work .article_work .souris .shadow_work:hover, html body .work .article_work .cosme1 .shadow_work:hover {
+.hover_article .shadow_work:hover, html body .work .article_work .cosme1 .shadow_work:hover, html body .work .article_work .souris .shadow_work:hover, html body .work .article_work .svgjinn .shadow_work:hover, html body .work .article_work .farmitoo .shadow_work:hover, html body .work .article_work .rayon .shadow_work:hover, html body .work .article_work .tft .shadow_work:hover, html body .work .article_work .troubleu .shadow_work:hover, html body .work .article_work .savon .shadow_work:hover {
   opacity: 0.5;
-  -webkit-transition: opacity 0.7s;
   transition: opacity 0.7s;
 }
-
-.hover_article .shadow_work:not(:hover), html body .work .article_work .savon .shadow_work:not(:hover), html body .work .article_work .troubleu .shadow_work:not(:hover), html body .work .article_work .tft .shadow_work:not(:hover), html body .work .article_work .rayon .shadow_work:not(:hover), html body .work .article_work .farmitoo .shadow_work:not(:hover), html body .work .article_work .svgjinn .shadow_work:not(:hover), html body .work .article_work .souris .shadow_work:not(:hover), html body .work .article_work .cosme1 .shadow_work:not(:hover) {
-  -webkit-transition: opacity 0.7s;
+.hover_article .shadow_work:not(:hover), html body .work .article_work .cosme1 .shadow_work:not(:hover), html body .work .article_work .souris .shadow_work:not(:hover), html body .work .article_work .svgjinn .shadow_work:not(:hover), html body .work .article_work .farmitoo .shadow_work:not(:hover), html body .work .article_work .rayon .shadow_work:not(:hover), html body .work .article_work .tft .shadow_work:not(:hover), html body .work .article_work .troubleu .shadow_work:not(:hover), html body .work .article_work .savon .shadow_work:not(:hover) {
   transition: opacity 0.7s;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 html body .bg {
   background-color: #fcf8e3;
   width: 100vw;
   position: relative;
   margin-bottom: 400px;
   max-width: 100%;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
 }
-
 html body .entete {
   margin-top: 60px;
   width: 100vw;
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 300px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 10px 10px 23px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 23px -7px black;
+  align-items: center;
+  box-shadow: 10px 10px 23px -7px rgb(0, 0, 0);
 }
-
 html body .entete .sc img {
   height: 300px;
   width: 100vw;
@@ -887,58 +729,37 @@ html body .entete .sc img {
   display: block;
   max-width: 100%;
 }
-
 html body .entete .titrelogo {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
-
 html body .entete .titrelogo h1 {
   font-family: "Lobster Two", cursive;
   color: #624b63;
   font-size: 3rem;
   text-align: center;
 }
-
 html body .entete .titrelogo figure img {
   display: block;
   height: 200px;
   width: 200px;
 }
-
 html body .h2s {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 html body .pres {
   margin-left: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   gap: 4vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border-left: 2px #624b63 solid;
   padding-left: 50px;
 }
-
 html body .pres p {
   font-family: "Arapey", serif;
   color: #624b63;
@@ -946,7 +767,6 @@ html body .pres p {
   padding-right: 20vw;
   font-weight: 500;
 }
-
 html body .pres ul li {
   color: #624b63;
   font-family: "Arapey", serif;
@@ -954,29 +774,21 @@ html body .pres ul li {
   list-style-type: disc;
   margin-left: 20px;
 }
-
 html body .work .article_work {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25%;
-      grid-template-columns: 25% 25% 25%;
-  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   gap: 1.5vw;
   margin-bottom: 15vw;
 }
-
 html body .work .article_work a,
 html body .work .article_work article {
   position: relative;
   z-index: 1;
   font-size: 1vw;
 }
-
 html body .work .article_work a img,
 html body .work .article_work article img {
   display: block;
@@ -985,7 +797,6 @@ html body .work .article_work article img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 html body .work .article_work a h3,
 html body .work .article_work article h3 {
   text-align: center;
@@ -995,7 +806,6 @@ html body .work .article_work article h3 {
   font-family: "Montserrat", sans-serif;
   color: #624b63;
 }
-
 html body .work .article_work a p,
 html body .work .article_work article p {
   font-family: "Montserrat", sans-serif;
@@ -1005,223 +815,106 @@ html body .work .article_work article p {
   font-size: 0.8em;
   color: #624b63;
 }
-
 html body .work .article_work .savon {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 1/2;
+  grid-row: 1/4;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .troubleu {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1 / 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 2/3;
+  grid-row: 1/5;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .tft {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 3/4;
+  grid-row: 1/4;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .rayon {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  grid-row: 4 / 7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 1/2;
+  grid-row: 4/7;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .contact_work {
   border: none;
   border-radius: 20px;
   background-color: #624b63;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 html body .work .article_work .contact_work h3,
 html body .work .article_work .contact_work p {
   color: white;
 }
-
 html body .work .article_work .farmitoo {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 5;
-  grid-row: 6 / 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 2/3;
+  grid-row: 6/11;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .svgjinn {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  grid-row: 4 / 7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 3/4;
+  grid-row: 4/7;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .svgjinn img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-
 html body .work .article_work .souris {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 4;
-  grid-row: 7 / 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 1/2;
+  grid-row: 7/11;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .work .article_work .souris img {
   -o-object-position: right;
      object-position: right;
 }
-
 html body .work .article_work .cosme1 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 4;
-  grid-row: 7 / 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-column: 3/4;
+  grid-row: 7/11;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
-
 html body .apropos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-left: 60px;
 }
-
 html body .apropos article p {
   text-align: left;
   color: #624b63;
@@ -1229,38 +922,27 @@ html body .apropos article p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
-
 html body .apropos article img {
   display: block;
   border: 1px solid #624b63;
   width: 300px;
 }
-
 html body .polyv {
   margin: 100px 0 100px 0;
   padding-bottom: 100px;
 }
-
 html body .polyv .pictos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 0;
   gap: 50px;
 }
-
 html body .polyv .pictos figure img {
   width: 200px;
   height: 200px;
   display: block;
 }
-
 html body .polyv .pictos h4 {
   text-align: center;
   color: #624b63;
@@ -1276,27 +958,18 @@ html body .polyv .pictos h4 {
     opacity: 0.2;
   }
   html body .entete .titrelogo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
     height: calc(100vh - 60px);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   html body .entete .titrelogo h1 {
     font-size: 1.5em;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     margin-top: 50px;
   }
   html body .entete .titrelogo figure img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   html body .h2s {
     margin: 0;
@@ -1315,8 +988,7 @@ html body .polyv .pictos h4 {
     margin: 0 auto;
     padding-right: 0 !important;
     padding-left: 20px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   html body .pres p {
     font-size: 1em;
@@ -1329,8 +1001,7 @@ html body .polyv .pictos h4 {
     font-size: 1em !important;
   }
   html body .work .article_work {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   html body .work .article_work .contact_work h3 {
     font-size: 1.3em;
@@ -1348,82 +1019,65 @@ html body .polyv .pictos h4 {
     font-size: 1.5em;
   }
   html body .work .article_work .hover_article img, html body .work .article_work .savon img, html body .work .article_work .troubleu img, html body .work .article_work .tft img, html body .work .article_work .rayon img, html body .work .article_work .farmitoo img, html body .work .article_work .svgjinn img, html body .work .article_work .souris img, html body .work .article_work .cosme1 img {
-    -webkit-transform: scale(100%) !important;
-            transform: scale(100%) !important;
+    transform: scale(100%) !important;
   }
   html body .work .article_work .hover_article .shadow_work, html body .work .article_work .savon .shadow_work, html body .work .article_work .troubleu .shadow_work, html body .work .article_work .tft .shadow_work, html body .work .article_work .rayon .shadow_work, html body .work .article_work .farmitoo .shadow_work, html body .work .article_work .svgjinn .shadow_work, html body .work .article_work .souris .shadow_work, html body .work .article_work .cosme1 .shadow_work {
     opacity: 0.5 !important;
   }
   html body .work .article_work .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p,
-  html body .work .article_work .hover_article:hover h3,
-  html body .work .article_work .savon:hover h3,
-  html body .work .article_work .troubleu:hover h3,
-  html body .work .article_work .tft:hover h3,
-  html body .work .article_work .rayon:hover h3,
-  html body .work .article_work .farmitoo:hover h3,
-  html body .work .article_work .svgjinn:hover h3,
-  html body .work .article_work .souris:hover h3,
-  html body .work .article_work .cosme1:hover h3,
-  html body .work .article_work .hover_article:hover img,
-  html body .work .article_work .savon:hover img,
-  html body .work .article_work .troubleu:hover img,
-  html body .work .article_work .tft:hover img,
-  html body .work .article_work .rayon:hover img,
-  html body .work .article_work .farmitoo:hover img,
-  html body .work .article_work .svgjinn:hover img,
-  html body .work .article_work .souris:hover img,
-  html body .work .article_work .cosme1:hover img {
-    -webkit-transition: unset;
+html body .work .article_work .hover_article:hover h3,
+html body .work .article_work .savon:hover h3,
+html body .work .article_work .troubleu:hover h3,
+html body .work .article_work .tft:hover h3,
+html body .work .article_work .rayon:hover h3,
+html body .work .article_work .farmitoo:hover h3,
+html body .work .article_work .svgjinn:hover h3,
+html body .work .article_work .souris:hover h3,
+html body .work .article_work .cosme1:hover h3,
+html body .work .article_work .hover_article:hover img,
+html body .work .article_work .savon:hover img,
+html body .work .article_work .troubleu:hover img,
+html body .work .article_work .tft:hover img,
+html body .work .article_work .rayon:hover img,
+html body .work .article_work .farmitoo:hover img,
+html body .work .article_work .svgjinn:hover img,
+html body .work .article_work .souris:hover img,
+html body .work .article_work .cosme1:hover img {
     transition: unset;
   }
   html body .work .article_work .hover_article:hover p, html body .work .article_work .savon:hover p, html body .work .article_work .troubleu:hover p, html body .work .article_work .tft:hover p, html body .work .article_work .rayon:hover p, html body .work .article_work .farmitoo:hover p, html body .work .article_work .svgjinn:hover p, html body .work .article_work .souris:hover p, html body .work .article_work .cosme1:hover p {
     top: 7vw;
   }
-  
-  html body .work .article_work .hover_article:hover h3,
-  html body .work .article_work .savon:hover h3,
-  html body .work .article_work .troubleu:hover h3,
-  html body .work .article_work .tft:hover h3,
-  html body .work .article_work .rayon:hover h3,
-  html body .work .article_work .farmitoo:hover h3,
-  html body .work .article_work .svgjinn:hover h3,
-  html body .work .article_work .souris:hover h3,
-  html body .work .article_work .cosme1:hover h3 {
+  html body .work .article_work .hover_article:hover h3, html body .work .article_work .savon:hover h3, html body .work .article_work .troubleu:hover h3, html body .work .article_work .tft:hover h3, html body .work .article_work .rayon:hover h3, html body .work .article_work .farmitoo:hover h3, html body .work .article_work .svgjinn:hover h3, html body .work .article_work .souris:hover h3, html body .work .article_work .cosme1:hover h3 {
     top: 2vw;
     text-decoration: none;
   }
   html body .work .article_work .hover_article:not(:hover) p, html body .work .article_work .savon:not(:hover) p, html body .work .article_work .troubleu:not(:hover) p, html body .work .article_work .tft:not(:hover) p, html body .work .article_work .rayon:not(:hover) p, html body .work .article_work .farmitoo:not(:hover) p, html body .work .article_work .svgjinn:not(:hover) p, html body .work .article_work .souris:not(:hover) p, html body .work .article_work .cosme1:not(:hover) p,
-  html body .work .article_work .hover_article:not(:hover) h3,
-  html body .work .article_work .savon:not(:hover) h3,
-  html body .work .article_work .troubleu:not(:hover) h3,
-  html body .work .article_work .tft:not(:hover) h3,
-  html body .work .article_work .rayon:not(:hover) h3,
-  html body .work .article_work .farmitoo:not(:hover) h3,
-  html body .work .article_work .svgjinn:not(:hover) h3,
-  html body .work .article_work .souris:not(:hover) h3,
-  html body .work .article_work .cosme1:not(:hover) h3,
-  html body .work .article_work .hover_article:not(:hover) img,
-  html body .work .article_work .savon:not(:hover) img,
-  html body .work .article_work .troubleu:not(:hover) img,
-  html body .work .article_work .tft:not(:hover) img,
-  html body .work .article_work .rayon:not(:hover) img,
-  html body .work .article_work .farmitoo:not(:hover) img,
-  html body .work .article_work .svgjinn:not(:hover) img,
-  html body .work .article_work .souris:not(:hover) img,
-  html body .work .article_work .cosme1:not(:hover) img {
-    -webkit-transition: unset;
+html body .work .article_work .hover_article:not(:hover) h3,
+html body .work .article_work .savon:not(:hover) h3,
+html body .work .article_work .troubleu:not(:hover) h3,
+html body .work .article_work .tft:not(:hover) h3,
+html body .work .article_work .rayon:not(:hover) h3,
+html body .work .article_work .farmitoo:not(:hover) h3,
+html body .work .article_work .svgjinn:not(:hover) h3,
+html body .work .article_work .souris:not(:hover) h3,
+html body .work .article_work .cosme1:not(:hover) h3,
+html body .work .article_work .hover_article:not(:hover) img,
+html body .work .article_work .savon:not(:hover) img,
+html body .work .article_work .troubleu:not(:hover) img,
+html body .work .article_work .tft:not(:hover) img,
+html body .work .article_work .rayon:not(:hover) img,
+html body .work .article_work .farmitoo:not(:hover) img,
+html body .work .article_work .svgjinn:not(:hover) img,
+html body .work .article_work .souris:not(:hover) img,
+html body .work .article_work .cosme1:not(:hover) img {
     transition: unset;
   }
   html body .apropos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0;
     margin: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   html body .apropos img {
     width: 400px !important;
@@ -1438,13 +1092,8 @@ html body .polyv .pictos h4 {
     height: 800px;
   }
   html body .fixed-footer .footer_contain {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 800px;
   }
   html body .fixed-footer .footer_contain .menu {
@@ -1467,23 +1116,15 @@ html body .polyv .pictos h4 {
     margin-top: 25px;
   }
   html body .fixed-footer .footer_contain .iconsclick {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
   }
   html body .fixed-footer .footer_contain .iconsclick ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   html body .fixed-footer .footer_contain .iconsclick ul li {
     width: 100%;
@@ -1499,150 +1140,106 @@ html body .polyv .pictos h4 {
     height: 150px;
   }
 }
-
 @media (max-width: 650px) {
   html body .work {
     max-width: 98.55%;
   }
   html body .work .article_work {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     max-width: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     gap: 1.5vw;
     margin-bottom: 35vw;
   }
   html body .work .article_work .savon {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1 / 4;
+    grid-column: 1/2;
+    grid-row: 1/4;
   }
   html body .work .article_work .savon h3,
-  html body .work .article_work .savon p {
+html body .work .article_work .savon p {
     font-size: 2.5em;
   }
   html body .work .article_work .troubleu {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    grid-row: 1 / 4;
+    grid-column: 2/4;
+    grid-row: 1/4;
   }
   html body .work .article_work .troubleu h3,
-  html body .work .article_work .troubleu p {
+html body .work .article_work .troubleu p {
     font-size: 2.5em;
   }
   html body .work .article_work .tft {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 3;
-    grid-row: 4 / 7;
+    grid-column: 1/2;
+    grid-row: 4/7;
   }
   html body .work .article_work .tft h3,
-  html body .work .article_work .tft p {
+html body .work .article_work .tft p {
     font-size: 2.5em;
   }
   html body .work .article_work .rayon {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 3;
-    grid-row: 4 / 7;
+    grid-column: 2/4;
+    grid-row: 4/7;
   }
   html body .work .article_work .rayon h3,
-  html body .work .article_work .rayon p {
+html body .work .article_work .rayon p {
     font-size: 2.5em;
   }
   html body .work .article_work .farmitoo {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 3;
-    grid-row: 7 / 10;
+    grid-column: 1/2;
+    grid-row: 7/10;
   }
   html body .work .article_work .farmitoo h3,
-  html body .work .article_work .farmitoo p {
+html body .work .article_work .farmitoo p {
     font-size: 2.5em;
   }
   html body .work .article_work .souris {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 3;
-    grid-row: 7 / 10;
+    grid-column: 2/4;
+    grid-row: 7/10;
   }
   html body .work .article_work .souris h3,
-  html body .work .article_work .souris p {
+html body .work .article_work .souris p {
     font-size: 2.5em;
   }
   html body .work .article_work .svgjinn {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 3;
-    grid-row: 10 / 13;
+    grid-column: 1/2;
+    grid-row: 10/13;
   }
   html body .work .article_work .svgjinn p {
     margin-top: 3vw;
   }
   html body .work .article_work .svgjinn h3,
-  html body .work .article_work .svgjinn p {
+html body .work .article_work .svgjinn p {
     font-size: 2.5em;
   }
   html body .work .article_work .contact_work {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    -ms-grid-row: 10;
-    -ms-grid-row-span: 3;
-    grid-row: 10 / 13;
+    grid-column: 2/4;
+    grid-row: 10/13;
   }
   html body .work .article_work .contact_work h3,
-  html body .work .article_work .contact_work p {
+html body .work .article_work .contact_work p {
     font-size: 2.5em;
   }
   html body .work .article_work .cosme1 {
     display: none;
   }
 }
-
 @media (max-width: 450px) {
   html body .work {
     max-width: 100%;
   }
   html body .work .article_work {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     max-width: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     gap: 1.5vw;
     margin-bottom: 220vw;
     height: auto;
   }
   html body .work .article_work a h3,
-  html body .work .article_work a p {
+html body .work .article_work a p {
     font-size: 15px !important;
   }
   html body .work .article_work a h3 {
@@ -1652,75 +1249,40 @@ html body .polyv .pictos h4 {
     top: 15vw !important;
   }
   html body .work .article_work .savon {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    grid-column: 1/2;
+    grid-row: 1/3;
   }
   html body .work .article_work .troubleu {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    grid-row: 3 / 5;
+    grid-column: 1/2;
+    grid-row: 3/5;
   }
   html body .work .article_work .tft {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    grid-row: 5 / 7;
+    grid-column: 1/2;
+    grid-row: 5/7;
   }
   html body .work .article_work .rayon {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 2;
-    grid-row: 7 / 9;
+    grid-column: 1/2;
+    grid-row: 7/9;
   }
   html body .work .article_work .farmitoo {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 2;
-    grid-row: 9 / 11;
+    grid-column: 1/2;
+    grid-row: 9/11;
   }
   html body .work .article_work .souris {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 11;
-    -ms-grid-row-span: 2;
-    grid-row: 11 / 13;
+    grid-column: 1/2;
+    grid-row: 11/13;
   }
   html body .work .article_work .svgjinn {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 13;
-    -ms-grid-row-span: 2;
-    grid-row: 13 / 15;
+    grid-column: 1/2;
+    grid-row: 13/15;
   }
   html body .work .article_work .contact_work {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 15;
-    -ms-grid-row-span: 2;
-    grid-row: 15 / 17;
+    grid-column: 1/2;
+    grid-row: 15/17;
   }
   html body .work .article_work .contact_work h3,
-  html body .work .article_work .contact_work p {
+html body .work .article_work .contact_work p {
     font-size: 15px;
-  }
-  html body .servp {
-    margin-bottom: 150px !important;
   }
   html body .pres p {
     font-size: 6vw;
@@ -1729,11 +1291,7 @@ html body .polyv .pictos h4 {
     font-size: 5vw !important;
   }
 }
-
 @media (max-width: 300px) {
-  html body .servp {
-    margin-bottom: 250px !important;
-  }
   html body .pres p {
     font-size: 8vw;
     margin: 0;
@@ -1741,5 +1299,4 @@ html body .polyv .pictos h4 {
   html body .pres ul li {
     font-size: 6vw !important;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
