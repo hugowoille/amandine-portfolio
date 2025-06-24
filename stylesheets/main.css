@@ -1,3 +1,4 @@
+/* $mauve: #624b63; */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -420,7 +421,7 @@ footer {
   z-index: -10;
   height: 500px;
   width: 100%;
-  background-color: #624b63;
+  background-color: #64524c;
   max-width: 100%;
 }
 footer .footer_contain {
@@ -481,7 +482,7 @@ nav {
   display: flex;
   align-items: center;
   top: 0;
-  background: #624b63;
+  background: #64524c;
   height: 60px;
   justify-content: space-around;
   z-index: 20;
@@ -546,7 +547,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
     align-items: flex-start;
     position: absolute;
     top: 100%;
-    background-color: #624b63;
+    background-color: #64524c;
     left: 0;
     height: auto;
     width: 100%;
@@ -608,7 +609,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
 }
 .title, html body .h2s h2 {
   color: #fcf8e3;
-  background-color: #624b63;
+  background-color: #64524c;
   font-family: "Lobster Two", cursive;
   height: 60px;
   width: 1000px;
@@ -624,7 +625,7 @@ nav .main-navlinks .navlinks-container a:hover:after {
   height: 60px;
   width: 60px;
   margin-left: 60px;
-  background-color: #624b63;
+  background-color: #64524c;
 }
 
 .hover_article h3, html body .work .article_work .cosme1 h3, html body .work .article_work .souris h3, html body .work .article_work .svgjinn h3, html body .work .article_work .farmitoo h3, html body .work .article_work .rayon h3, html body .work .article_work .tft h3, html body .work .article_work .troubleu h3, html body .work .article_work .savon h3,
@@ -738,7 +739,7 @@ html body .entete .titrelogo {
 }
 html body .entete .titrelogo h1 {
   font-family: "Lobster Two", cursive;
-  color: #624b63;
+  color: #64524c;
   font-size: 3rem;
   text-align: center;
 }
@@ -757,18 +758,18 @@ html body .pres {
   justify-content: space-around;
   gap: 4vw;
   flex-direction: column;
-  border-left: 2px #624b63 solid;
+  border-left: 2px #64524c solid;
   padding-left: 50px;
 }
 html body .pres p {
   font-family: "Arapey", serif;
-  color: #624b63;
+  color: #64524c;
   font-size: 1.1em;
   padding-right: 20vw;
   font-weight: 500;
 }
 html body .pres ul li {
-  color: #624b63;
+  color: #64524c;
   font-family: "Arapey", serif;
   font-size: 1em;
   list-style-type: disc;
@@ -804,7 +805,7 @@ html body .work .article_work article h3 {
   padding: 0;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
-  color: #624b63;
+  color: #64524c;
 }
 html body .work .article_work a p,
 html body .work .article_work article p {
@@ -813,7 +814,7 @@ html body .work .article_work article p {
   margin: 0;
   padding: 0;
   font-size: 0.8em;
-  color: #624b63;
+  color: #64524c;
 }
 html body .work .article_work .savon {
   grid-column: 1/2;
@@ -854,7 +855,7 @@ html body .work .article_work .rayon {
 html body .work .article_work .contact_work {
   border: none;
   border-radius: 20px;
-  background-color: #624b63;
+  background-color: #64524c;
   color: white;
   display: flex;
   flex-direction: column;
@@ -917,14 +918,14 @@ html body .apropos {
 }
 html body .apropos article p {
   text-align: left;
-  color: #624b63;
+  color: #64524c;
   padding: 0 5% 0 5%;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
 }
 html body .apropos article img {
   display: block;
-  border: 1px solid #624b63;
+  border: 1px solid #64524c;
   width: 300px;
 }
 html body .polyv {
@@ -945,7 +946,7 @@ html body .polyv .pictos figure img {
 }
 html body .polyv .pictos h4 {
   text-align: center;
-  color: #624b63;
+  color: #64524c;
   font-family: "Montserrat", sans-serif;
 }
 
